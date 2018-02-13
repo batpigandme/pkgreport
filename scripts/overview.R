@@ -2,6 +2,9 @@ library(tidyverse)
 library(lubridate)
 load_all(here::here())
 
+# TODO: Include in test coverage
+# TODO: add CRAN package status
+
 orgs <- c("tidyverse", "r-lib", "r-dbi")
 org_repos <- orgs %>%
   map_df(github_repos) %>%
@@ -89,8 +92,15 @@ issues_sum <- issues %>%
 
 repos <- repos %>% left_join(issues_sum, by = c("owner", "repo"))
 
+# Create issues df without labels column for csv
+# Issues less labs
+
+issues_no_labs <- issues %>%
+  select(-labels)
 
 # Share on googlesheets ---------------------------------------------------
 
 write_csv(repos, data_path("overview.csv"), na = "")
-write_csv(issues, data_path("issues.csv"), na = "")
+# write_csv(issues, data_path("issues.csv"), na = "")
+write_csv(issues_no_labs, data_path("issues.csv"), na = "")
+
