@@ -1,6 +1,9 @@
 owner,repo,number,title,comments,pr,bug,feature,unlabelled,reaction_p1,reaction_other
 tidyverse,blob,8,Needs pkgdown page,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,blob,1,Support handles?,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,broom,285,Kendall,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,broom,284,output of tidy.kde is not tidy data,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,broom,283,output for lms with categorical variables,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,282,"Default output ""random"" tidy/lme",0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,281,Try fallback to texreg,1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,broom,280,oneliner adding stringsAsFactors = FALSE in tidy.nls ,0,TRUE,FALSE,FALSE,FALSE,0,0
@@ -90,7 +93,7 @@ tidyverse,broom,161,broom for vars package on Vector Autoregressive Methods,0,FA
 tidyverse,broom,160,broom for Occupancy models in unmarked,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,159,tidy method for xgboost,0,FALSE,FALSE,FALSE,TRUE,2,0
 tidyverse,broom,158,Clarity regarding GLM,1,FALSE,FALSE,FALSE,TRUE,3,0
-tidyverse,broom,156,Compatibility with Ordinal package,0,FALSE,FALSE,FALSE,TRUE,2,0
+tidyverse,broom,156,Compatibility with Ordinal package,1,FALSE,FALSE,FALSE,TRUE,2,0
 tidyverse,broom,154,"glance() on tbl_df throws ""infinite recursion"" error",1,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,broom,153,support for rpart and randomforest models?,1,FALSE,FALSE,FALSE,TRUE,2,0
 tidyverse,broom,152,include model specification in tidied model object,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -142,18 +145,31 @@ tidyverse,broom,23,Add tidiers for vegan package,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,16,Factor variables,4,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,12,Compatibility with stargazer or xtable,3,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,broom,2,Tidy multiple models at once,4,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,dbplyr,72,Adds support for spread,1,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,dbplyr,71,Feature/add pool,3,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,dbplyr,69,fix sql translation of %in% with empty vectors,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dbplyr,66,Changed VARCHAR to VARCHAR2,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dbplyr,65,Update db-sqlite.r,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dbplyr,64,sample_n & sample_frac implementation,0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3378,filter date with database,0,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3375,filter in can not take empty vector of values on PostgreSQL,0,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3374,filter can not use inline pull,4,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3373,FR: destructuring assignment in mutate,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,dplyr,3372,mutate_if issues a warning on databases implying it may not be processing all rows,0,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3371,Tangling with dots,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,dplyr,3370,transmute does not work with DBI,2,FALSE,FALSE,FALSE,FALSE,1,0
+tidyverse,dplyr,3369,Error in inner_join ,1,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3368,Improve error message when a function is supplied quoted to funs(),2,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,dplyr,3367,Add cheat sheet thumbnail & link to README,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3365,combine(NULL) should return NULL instead of error,0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,dplyr,3364,"inner_join in odbc missing ""AS"" in TBL_RIGHT",0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,dplyr,3364,"inner_join in odbc missing ""AS"" in TBL_RIGHT",14,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3363,Fix rename_all() on grouped data,2,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3362,grouped_df internal structure: okay to use?,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3360,quo() and rowwise mutate,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3359,resets plyr attach hook when detaching dplyr,0,TRUE,FALSE,FALSE,FALSE,0,0
-tidyverse,dplyr,3357,order_by() could have an error hint when confused with arrange(),2,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,dplyr,3357,order_by() could have an error hint when confused with arrange(),2,FALSE,FALSE,FALSE,TRUE,2,0
 tidyverse,dplyr,3356,tbl impl for Teradata does not support cross schema query,1,FALSE,FALSE,FALSE,FALSE,0,0
-tidyverse,dplyr,3355,copy_to causes PostgreSQL to be memory hungry with large dataframes,0,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3355,copy_to causes PostgreSQL to be memory hungry with large dataframes,14,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,dplyr,3353,Issue when joining on lubridate intervals,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3352,summarize_at fails if named argument included and the .tbl is a SQL database,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3351,group_by_at() doesn't handle existig grouping correctly,1,FALSE,TRUE,FALSE,FALSE,0,0
@@ -163,7 +179,6 @@ tidyverse,dplyr,3346,na_if() fails if date column present in data frame,0,FALSE,
 tidyverse,dplyr,3345,error in bind_rows column can't be converted from date,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3343,string filter issue using `odbc` with SAP HANA ODBC Drivers,2,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3341,group_id pronoun,1,FALSE,FALSE,TRUE,FALSE,0,0
-tidyverse,dplyr,3339,substr() not being translated correctly into PostgreSQL/Redshift SUBSTRING,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3338,dbplyr: Invalid column reference  'UQCALIASFORSQ1',1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3337,dbplyr: if_else error with boolean values and MSSQL database,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3335,filtering wide tibble is slow,13,FALSE,FALSE,FALSE,FALSE,1,0
@@ -210,7 +225,7 @@ tidyverse,dplyr,3249,Modify tally and friends to be consistent,9,TRUE,FALSE,FALS
 tidyverse,dplyr,3246,case_when: issue with zero length RHS values,3,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3245,why arrange_at/all/if do not have parameter '.by_group' like arrange?,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3238,union the exactly same two copies gives different number of rows,6,FALSE,FALSE,FALSE,FALSE,0,0
-tidyverse,dplyr,3236,"""Type DOUBLE does not exist"" in Vertica database",8,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,dplyr,3236,"""Type DOUBLE does not exist"" in Vertica database",12,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3235,distinct(): named computed columns do not work on databases,3,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,dplyr,3231,[Feature Request] Join Information added to dplyr joins functions,6,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,dplyr,3227,pmin and pmax fail in mutate connected to SQL Server,5,FALSE,FALSE,TRUE,FALSE,0,0
@@ -219,12 +234,11 @@ tidyverse,dplyr,3221,Function recode is not matching by position,3,FALSE,FALSE,F
 tidyverse,dplyr,3219,distinct() retains ordering of variables provided by the user,3,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3218,Suggest adding example for intended use of !!! in recode,3,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3215,Support everything() in transmute(),1,FALSE,FALSE,TRUE,FALSE,1,0
-tidyverse,dplyr,3214,Fixes one-letter typo in function reference,2,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3210,`left_join()` with `bit64` columns translates `NA` incorrectly,2,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,dplyr,3209,Support more advanced patterns in matches(),4,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3208,case_when semantics,2,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3206,Unexpected lubridate interval behavior when filtering dataframe via dplyr,7,FALSE,FALSE,FALSE,FALSE,0,0
-tidyverse,dplyr,3205,"translate_sql, as.character in combination with %in%",1,FALSE,TRUE,FALSE,FALSE,1,0
+tidyverse,dplyr,3205,"translate_sql, as.character in combination with %in%",3,FALSE,TRUE,FALSE,FALSE,1,0
 tidyverse,dplyr,3201,WIP: Update programming vignette,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3200,dbplyr on HIVE produces invalid SQL when using select_*() or select helpers on an in_schema() object,7,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3197,dplyr::copy_to(overwrite = TRUE) causes PostgreSQL to issue a spurious warning,1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -239,7 +253,7 @@ tidyverse,dplyr,3153,arrange()-ing by data frame (instead of by variable) result
 tidyverse,dplyr,3140,throw error when providing invalid column to `distinct()`,1,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,dplyr,3135,"Dramatically slower grouped performance of ""cumulative"" window functions in 0.7 vs 0.5 or lower",3,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3133,Should case_when() use eval_tidy()?,0,FALSE,FALSE,TRUE,FALSE,0,0
-tidyverse,dplyr,3128,More precise error messages for mutate() et al.,0,FALSE,FALSE,TRUE,FALSE,0,0
+tidyverse,dplyr,3128,More precise error messages for mutate() et al.,0,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,dplyr,3110,Investigate Boost.Sort,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3107,Change constructors that take a constant reference,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,3094,summarise_all applies functions to themselves,7,FALSE,TRUE,FALSE,FALSE,1,0
@@ -298,14 +312,14 @@ tidyverse,dplyr,2454,WIP: Ungrouped operations are special case of grouped opera
 tidyverse,dplyr,2432,Better support combining for non-base types,1,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,dplyr,2401,Improve handling of tibbles with invalid column names,5,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,dplyr,2355,"Use serialization for columns of type ""list""",0,FALSE,FALSE,TRUE,FALSE,1,0
-tidyverse,dplyr,2326,Single table verbs should accept tibbles in conditions,4,FALSE,FALSE,TRUE,FALSE,7,0
+tidyverse,dplyr,2326,Single table verbs should accept tibbles in conditions,5,FALSE,FALSE,TRUE,FALSE,7,0
 tidyverse,dplyr,2312,Properly specify and implement hybrid evaluation for summary variables,2,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,2311,Ungrouped processing should always be a special case of grouped processing,0,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,2310,Why does summarize drop units?,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,2299,Encapsulate and fix argument matching in hybrid evaluator,6,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,2295,Consider using R_tryEval() instead of Rcpp_eval(),10,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,2264,No tolerance in dplyr's `all.equal.tbl_df()`,7,FALSE,FALSE,TRUE,FALSE,0,0
-tidyverse,dplyr,2240,join_by(): Syntax for generic joins,3,FALSE,FALSE,TRUE,FALSE,25,1
+tidyverse,dplyr,2240,join_by(): Syntax for generic joins,3,FALSE,FALSE,TRUE,FALSE,26,1
 tidyverse,dplyr,2220,Performance regressions,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,dplyr,2183,feature request : add `merge` indicator after a merge in dplyr,13,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,dplyr,2132,Summarising verbs with variable-length outputs,6,FALSE,FALSE,TRUE,FALSE,1,0
@@ -319,14 +333,20 @@ tidyverse,dplyr,1619,Implement check_keys,8,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,1438,sample_n() silently fails after group_by() %>% filter(),1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,1092,Support for integer64 column in data frame?,6,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,dplyr,341,Preserve zero-length groups,31,FALSE,FALSE,TRUE,FALSE,5,0
+tidyverse,forcats,118,fct_lump yields different number of factor levels for the same `n` when `w` is specified,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,forcats,117,Feature request: number-aware alphanumeric factor ordering,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,forcats,100,Integrate fct_other functionality into fct_collapse,2,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,forcats,65,Enhance semantics of `prop` in fact_lump.,2,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,forcats,43,FR: Improve fct_lump() behavior for factors with many rare levels,3,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,forcats,28,factor lump for ordinal factors,3,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,forcats,18,Turn levels into numbers,5,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,forcats,16,Feature request: Order factor by (multiple functions of) multiple variables,7,FALSE,FALSE,TRUE,FALSE,3,0
+tidyverse,ggplot2,2463,Documentation request: using `..quantile..` to map aesthetics with geom_quantile(),0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,ggplot2,2460,"Error thrown for legend creation with multiple calls of geom_sf, when using show.legend",2,FALSE,FALSE,FALSE,TRUE,2,0
+tidyverse,ggplot2,2459,enhancement request: geom_flat_violin.R,4,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,ggplot2,2458,Pass `label` to `draw_key_text`,2,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,ggplot2,2457,Add Data Visualization Cheat Sheet to README,0,FALSE,FALSE,FALSE,FALSE,1,0
 tidyverse,ggplot2,2456,"Error: Found object (""histogram"") is not a geom, says update_geom_defaults()",0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,ggplot2,2455,position dodge doesn't actually dodge,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,ggplot2,2454,scale_y_log10 Fails with a Very Large Range,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,ggplot2,2453,setting height argument 0 (zero) in geom_jitter can be really vital :),0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,ggplot2,2451,fix typo for Extending ggplot2,0,TRUE,FALSE,FALSE,FALSE,0,0
@@ -364,7 +384,7 @@ tidyverse,ggplot2,2387,Move mgcv from Suggests to Imports,0,TRUE,FALSE,FALSE,FAL
 tidyverse,ggplot2,2386,Make position_dodge2 preserve total width by default,2,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,ggplot2,2384,Add prominent link to ggplot2 extensions site,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,ggplot2,2378,"grouped_df should not require a "".group"" variable for data on the other layers",1,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,ggplot2,2377,Add support for integer64 variable types,2,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,ggplot2,2377,Add support for integer64 variable types,2,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,ggplot2,2376,Fix a typo in position-jitter documentation,1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,ggplot2,2375,added fill to gpar in geom_curve(),8,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,ggplot2,2374,"Current development version breaks compatibility with scale() output, e.g. in qq-plots",2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -446,9 +466,10 @@ tidyverse,googledrive,79,Unable to authorize from Rstudio Server,1,FALSE,FALSE,F
 tidyverse,googledrive,44,Uploading an R object w/o writing to file,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,googlesheets4,3,Friction,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,googlesheets4,2,API Discovery Service,1,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,haven,354,read_data can read variable names with chinese characters but write_data gives error,5,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,haven,353,Preserve labelled_spss class when subsetting,0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,haven,352,"Fix for converting to factor using option ""labelled"" when there are tagged nas",0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,haven,351,Add pillar printing (+ 2 other fixes along the way) Fixes #340,0,TRUE,FALSE,FALSE,FALSE,0,0
-tidyverse,haven,350,"add invisible return for write_*(), update docs/news",0,TRUE,FALSE,FALSE,FALSE,0,0
-tidyverse,haven,349,write_*() doesn't invisibly return input dataframe,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,haven,345,read_sas error: unsupported character set,5,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,haven,341,Update local tidytemplate w/ fixed pkgdown link,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,haven,340,Add pillar printing for the labelled class,1,FALSE,FALSE,TRUE,FALSE,1,0
@@ -457,7 +478,7 @@ tidyverse,haven,308,Support zap_label and/or zap_everything,1,FALSE,FALSE,TRUE,F
 tidyverse,haven,290,Auto coerce SPSS 'nominal' and 'ordinal' variables to factors,2,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,haven,266,SPSS Error # 1405 when reading haven-created SAV files containing 256+ byte strings,17,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,haven,248,Import subset of columns,20,FALSE,FALSE,TRUE,FALSE,0,0
-tidyverse,haven,224,The exported file cannot be opened by SAS,19,FALSE,TRUE,FALSE,FALSE,0,0
+tidyverse,haven,224,The exported file cannot be opened by SAS,20,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,haven,219,Importing a variable with missing values but no labels,2,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,haven,194,Chunked API,1,FALSE,FALSE,TRUE,FALSE,6,4
 tidyverse,hms,54,Is pillar printing too aggressive?,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -469,9 +490,12 @@ tidyverse,hms,39,parser can be improved,3,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,hms,38, Implicit coercion when operating with strings ,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,hms,24,Dynamically install and uninstall as.hms.units() provided by the units package,1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,hms,14,Alternate formatting options,1,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,lubridate,639,can't install with devtools on x86_64 GNU/Linux system,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,lubridate,645,issue with flooring and ceiling dates,3,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,lubridate,643,bug adding days to POSIXct object in version 1.7.2,3,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,lubridate,640,Date rounding with daylight saving time,8,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,lubridate,639,can't install with devtools on x86_64 GNU/Linux system,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,lubridate,638,Functions for working with/extracting information from interval objects,6,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,lubridate,633,add_period_to_date/add_months returns NA for some dates/periods,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,lubridate,633,add_period_to_date/add_months returns NA for some dates/periods,0,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,lubridate,631,Stamp fails on a basic input,0,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,lubridate,630,"Add a ym() function for year-month ""dates"" in spirit of yq()?",1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,lubridate,629,Feature Request: as.ISO8601,6,FALSE,FALSE,FALSE,FALSE,0,0
@@ -497,7 +521,7 @@ tidyverse,lubridate,216,pretty_dates requires unrealistic knowledge about number
 tidyverse,lubridate,176,need sum method for timespan classes,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,lubridate,173,"Suppressing ""estimate only"" message",3,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,lubridate,21,expanding/contracting for weekends,22,FALSE,FALSE,FALSE,FALSE,0,0
-tidyverse,magrittr,162,Would a %T$% operator make sense?,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,magrittr,162,Would a %T$% operator make sense?,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,magrittr,161,Update local tidytemplate w/ fixed pkgdown link,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,magrittr,160,Intermittent problem involving inset and double pipe,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,magrittr,159,Pipes of functions have broken environments,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -580,12 +604,12 @@ tidyverse,modelr,13,Model quality functions need common prefix,1,FALSE,FALSE,FAL
 tidyverse,modelr,12,Standard wrapper for fitting many models,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,modelr,10,Saving fitted models to disk?,2,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,modelr,7,Support for transformed response,0,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,purrr,467,Add thumbnail for Apply Functions Cheat Sheet to README,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,purrr,466,rbernoulli produces incorrect answers with scalar `n` and vector `p`,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,purrr,462,"More re: the ""p"" in ""pmap()""",0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,purrr,459,purrr functionals and factories do not support lexical dispatch,4,FALSE,TRUE,FALSE,FALSE,0,0
 tidyverse,purrr,457,Extending partial() to comprehend quasiquotation,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,purrr,456,Would an ireduce() function be welcome?,2,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,purrr,455,minimal support for raw vectors.,7,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,purrr,452,Suboptimal error message from map_*() variants,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,purrr,450,functional map_when to apply with conditional,2,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,purrr,448,Please add generic `assoc` and `update`,9,FALSE,FALSE,TRUE,FALSE,0,0
@@ -634,7 +658,8 @@ tidyverse,purrr,219,Provide execution engines for map functions,7,FALSE,FALSE,TR
 tidyverse,purrr,149,Progress bars,24,FALSE,FALSE,TRUE,FALSE,21,0
 tidyverse,purrr,144,Special class for list output?,8,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,purrr,121,Does purrr need to support backends?,5,FALSE,FALSE,TRUE,FALSE,30,0
-tidyverse,readr,799,Option for thousands separator in read_csv(),0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,readr,802,`readr::read_delim()`: delim argument accepts >1 character,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,readr,800,Add data import cheat sheet thumb to README,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,readr,798,Support reading single line literal datasets,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readr,797,fwf_positions() should enforce col_names to be a character,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readr,796,`parse_number` can't handle special space character as grouping_mark locale argument,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -707,12 +732,13 @@ tidyverse,readr,449,Percent parser,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,readr,444,Currency parser,2,FALSE,FALSE,TRUE,FALSE,1,0
 tidyverse,readr,397,Full width spaces are not removed by read_csv() function with trim_ws = TRUE,5,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,readr,336,Use cctz for date/time operations,0,FALSE,FALSE,TRUE,FALSE,0,0
-tidyverse,readr,306,Support multibyte encodings (e.g. UTF-16LE),7,FALSE,FALSE,TRUE,FALSE,4,0
+tidyverse,readr,306,Support multibyte encodings (e.g. UTF-16LE),7,FALSE,FALSE,TRUE,FALSE,5,0
 tidyverse,readr,303,Write/read simple list-columns?,7,FALSE,FALSE,TRUE,FALSE,2,0
 tidyverse,readr,270,Add n_skip parameter to col_number()?,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,readr,237,Think about how to extract colspec package,3,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readr,104,Add read_markdown_table,10,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,readr,76,Streaming interface to handle connections,5,FALSE,FALSE,TRUE,FALSE,0,0
+tidyverse,readxl,426,"read_excel reads from URL, part of #278",1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,readxl,425,Communicate our patches to libxls to Evan Miller,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readxl,423,Decimals in read_excel,6,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readxl,421,explicitly defined text column interpreted arbitrarily,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -738,7 +764,7 @@ tidyverse,readxl,370,read_excel on Windows fails to open a file from a UTF-8 enc
 tidyverse,readxl,369,.xls file takes too much RAM even when specifying a small range,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readxl,365,formula vs values,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readxl,361,column type conversion warnings can be overwhelming,4,FALSE,FALSE,FALSE,TRUE,1,0
-tidyverse,readxl,360,20.4 as text read as 20.399999,8,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,readxl,360,20.4 as text read as 20.399999,9,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,readxl,357,column names have double underscores in them when col_names = F after latest update,5,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,readxl,355,option to repeat value in merged cells,1,FALSE,FALSE,TRUE,FALSE,3,0
 tidyverse,readxl,353,Feature request: 'comment' argument for read_excel (and friends),1,FALSE,FALSE,TRUE,FALSE,0,0
@@ -752,7 +778,7 @@ tidyverse,readxl,243,read_excel progress bar,7,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,readxl,198,Add column specification as in readr,4,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,readxl,118,Convert character <--> date,5,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,reprex,177,"Reinstate ""Advanced features"" of vignette ... or not",0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,reprex,173,Unable to put result on the clipboard.,3,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,reprex,173,Unable to put result on the clipboard.,3,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,reprex,172,Add GIF of `reprex` process with expressions to `README`,3,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,reprex,171,reprex ORPHANED on CRAN,7,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,reprex,166,Rendering reprex fails with non-standard R prompt,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -766,20 +792,19 @@ tidyverse,reprex,74,Adding traceback() info,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,reprex,67,FR: Capture reprex directly from GitHub issue or SO post,4,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,reprex,65,"addin: simulate a click on the ""render"" button when enter pressed",0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,reprex,26,"Create syntax-highlighted RTF snippets for pasting into, e.g., Keynote",3,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,stringr,222,"str_extract_before, str_extract_after, str_extract_between",0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,stringr,221,Help installing tidy verse,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,stringr,220,Add additional example for str_detect to show absence,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,stringr,219,Add cheat sheet thumbnail to README,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,stringr,217,Passing character vectors with missing values to str_view(),0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,stringr,216,"replace ""sub_str"" to correct ""str_sub"", fix #211",0,TRUE,FALSE,FALSE,FALSE,0,0
-tidyverse,stringr,215,incorrect str_extract() operation,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,214,Str_dice,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,stringr,213,str_interp() formatting of interpolated list depends on presence other interpolated expressions,1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,stringr,212,Include see also pointer to tidyr::extract,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,stringr,211,"vignette uses ""sub_str"" not ""str_sub""",0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,210,"str_replace with empty pattern or pattern = boundary(""character"") Not implemented",1,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,stringr,209,Update local tidytemplate w/ fixed pkgdown link,0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,stringr,208,Matching newline character,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,207,ignore_case doesn't work for str_replace_all when using named vector,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,206,Fixed unexpected behavior of str_trunc,0,TRUE,FALSE,FALSE,FALSE,1,0
 tidyverse,stringr,205,Clean roxygen doc in str_glue and vignette,0,TRUE,FALSE,FALSE,FALSE,0,0
-tidyverse,stringr,204,Feature request: generalization of stringr::str_count,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,203,Unexpected behavior of str_trunc,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,stringr,202,str_to_sentence,1,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,stringr,200,Improvement,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -801,12 +826,13 @@ tidyverse,style,59,Fix typo,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,style,58,syntax spacing,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,style,57,More error thoughts,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,style,56,Mention ngettext() in Errors section,0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,style,55,Adapting to rlang 0.2,0,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,style,55,Adapting to rlang 0.2,1,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,style,47,File naming conventions specific to packages,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,style,37,Add chapter on OOP (follow up to #36),1,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,style,36,"Add a chapter on S3, S4 and R6",2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,style,35,[ vs [[,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,style,1,Naming functions: auto-completion and links,4,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,tibble,386,as_tibble gives non-informative error message when extracting row names from matrices,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,384,glimpse confuses factors with commas in levels,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,373,Implement generic view(),5,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,372,Feature Request: Turn off xterm colourization/formatting for dumb terminals,3,FALSE,FALSE,FALSE,TRUE,1,0
@@ -814,7 +840,6 @@ tidyverse,tibble,371,"Don't print ""with more rows"" if result set contains exac
 tidyverse,tibble,364,Add documentation how to implement printing for a subclass,3,FALSE,FALSE,FALSE,FALSE,1,0
 tidyverse,tibble,361,Option to remove pillar formatting from tibble printing,9,FALSE,FALSE,FALSE,TRUE,2,0
 tidyverse,tibble,345,Extending tibble vignette needs section on suggesting tibble,6,FALSE,FALSE,FALSE,FALSE,0,0
-tidyverse,tibble,340,Misleading error using rowid_to_column on sf objects,10,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,331,dput method for tibble's?,8,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,326,S4 columns,2,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,320,Cannot convert tibble to array in R?,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -824,7 +849,7 @@ tidyverse,tibble,275,Clarify how to extend tibbles,16,FALSE,FALSE,FALSE,FALSE,0,
 tidyverse,tibble,273,1x1 tibble multiplied with vector yields just one number,3,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,tibble,267,lst(...) performance woes,7,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tibble,264,Breakages for 1.5.0,0,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,tibble,255,Encourage comment()<- ,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,tibble,255,Encourage comment()<- ,0,FALSE,FALSE,FALSE,TRUE,1,0
 tidyverse,tibble,250,Update error messages,5,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,tibble,223,Standardize error messages,5,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,tibble,219,Explicitly support enframe() and deframe() for lists,1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -842,9 +867,14 @@ tidyverse,tibble,114,Remove support for row names,6,FALSE,FALSE,FALSE,FALSE,2,0
 tidyverse,tibble,113,Print first _and_ last few elements,1,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,tibble,111,Deprecate as_data_frame() et al.,0,FALSE,FALSE,FALSE,FALSE,0,0
 tidyverse,tibble,87,Re-encode character columns and column names to UTF-8,11,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyr,428,added new example using mutate(),0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyr,426,Duplicate identifiers for rows in `spread`,1,FALSE,FALSE,FALSE,TRUE,1,0
+tidyverse,tidyr,423,Fix `crossing()` to preserve factor levels.,0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyr,422,Put data-import cheatsheet thumb/link in README,0,FALSE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyr,421,Add CodeTriage badge to tidyverse/tidyr,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,tidyr,418,Directional unnesting,0,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,tidyr,410,crossing() removes NA from factor levels,5,FALSE,FALSE,FALSE,TRUE,0,0
-tidyverse,tidyr,406,Preserve column order after unnesting,0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyr,406,Preserve column order after unnesting,2,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,tidyr,397,In separate an into= column name can be NA to not generate that column,3,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,tidyr,396,complete() on grouping variables gives wrong output,6,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyr,387,Adding group names when unnesting named lists of lists,0,FALSE,FALSE,TRUE,FALSE,0,0
@@ -862,10 +892,14 @@ tidyverse,tidyr,193,spread with drop=FALSE and additional columns,7,FALSE,TRUE,F
 tidyverse,tidyr,183,Dataset patching tools,12,FALSE,FALSE,TRUE,FALSE,0,0
 tidyverse,tidyr,150,Implement multi-gather,5,FALSE,FALSE,TRUE,FALSE,0,5
 tidyverse,tidyr,149,Implement multi-spread,3,FALSE,FALSE,TRUE,FALSE,1,0
+tidyverse,tidyselect,52,Warning if names of duplicated selected variables do not agree,3,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,tidyselect,51,"Error: could not find function ""lang_unnamespace""",9,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyselect,50,select_helpers accept character vector?,1,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyselect,48,Implement a group_by() helper?,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyselect,47,Implement a slice() helper?,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyselect,42,Is vars_pull too flexible?,0,FALSE,FALSE,FALSE,TRUE,0,0
+tidyverse,tidyverse,120,Add pillar 1.2.0 dependency,0,TRUE,FALSE,FALSE,FALSE,0,0
+tidyverse,tidyverse,118,Issues installing tidyverse Linux ,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyverse,117,Update README to reflect current core packages ,0,TRUE,FALSE,FALSE,FALSE,0,0
 tidyverse,tidyverse,116,callr package failing to install,0,FALSE,FALSE,FALSE,TRUE,0,0
 tidyverse,tidyverse,113,Update README to reflect current core packages,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -899,11 +933,14 @@ r-lib,async,23,Allow catching certain error types only,0,FALSE,FALSE,FALSE,TRUE,
 r-lib,async,4,Complete HTTP,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,async,2,Collections methods from async,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,async,1,Control flow like async,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,backports,11,Similar project,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,backports,10,Add .traceback(),0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,callr,40,r_script,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,callr,39,Compilation fails if RTools is not installed in default folder,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,callr,30,"Do not omit .Renviron, set R_LIBS in the fake profile",1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,callr,29,remotify ?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,callr,28,Syntactic sugar for functions in packages,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,cli,43,How to use spinners in code?,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,cli,38,Helpers for error messages,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,cli,35,Reminder re. adding release notes 😬,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,cli,34,Consider special case for latex environments?,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -913,7 +950,7 @@ r-lib,covr,299,Fix AppVeyor integration,2,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,covr,297,Error in readme exclusion section,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,covr,294,Coverage of functions not found by trace_environment,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,covr,292,"package_coverage() errors but package_coverage(quiet = FALSE, clean = FALSE) succeeds",2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,covr,291,0% coverage reported on Windows,15,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,covr,291,0% coverage reported on Windows,16,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,covr,279,Branch coverage,1,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,covr,278,Easter egg for coverage thresholds.,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,covr,277,Coverage For Shiny Applications,0,FALSE,FALSE,FALSE,FALSE,1,0
@@ -932,6 +969,7 @@ r-lib,crancache,18,crancache_home,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,crancache,15,Should default to using RStudio CRAN mirror,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,crancache,8,Cache size management,1,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,crancache,2,Tests,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,crayon,67,"Windows ESS can display colors in the terminal, though you don't enable it",0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,crayon,62,windows shell support?,8,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,crayon,58,crayon::col_strwrap(),4,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,crayon,57,crayon::`col_substr()<-`,1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -956,13 +994,17 @@ r-lib,desc,54,Use internal tar,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,desc,47,Trailing whitespace behavior when moving dependencies to multiple lines,6,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,desc,46,Added Author Coercion,10,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,desc,28,Helper for licenses?,5,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,devtools,1711,Add CRAN-RELEASE to .Rbuildignore,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,devtools,1720,check_win_xxx() need manual = FALSE arg,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,devtools,1719,Adjust to git2r's S4 --> S3 transition,1,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,devtools,1716,"devtools::install_svn automatically adds ""trunk"" to ""url"" path",1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,devtools,1715,Unused argument error in spell_check,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,devtools,1714,feature request: R CMD check and no visible binding for global variable,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,devtools,1711,Add CRAN-RELEASE to .Rbuildignore,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,devtools,1707,Installing from private github repo fails in docker build,3,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,devtools,1703,Need tools to build and test vignettes without installing package,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,devtools,1694,Installing IRKernel on silo'd environment (SCCM),1,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,devtools,1690,check_cran(): add check for examples,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,devtools,1673,Add option to generate .zenodo.json file from DESCRIPTION,2,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,devtools,1672,Use foghorn to report results of CRAN checks during release process ,1,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,devtools,1666,install_github from private Repo,3,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,devtools,1658,install_github hanging forever,1,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,devtools,1653,`load_all()` fails after first load for packages which use `Rcpp::loadModule()`,4,FALSE,TRUE,FALSE,FALSE,0,0
@@ -994,8 +1036,8 @@ r-lib,filelock,17,Different types of locks on the same file fail,0,FALSE,FALSE,F
 r-lib,filelock,16,Unlock everything on package unload?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,filelock,15,Add a with_filelock function,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,filelock,1,Provide a function that detects locking support,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,fs,68,Support to integrate HDFS filesystem,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,fs,58,Segfault when calling `path_home()` ,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,fs,68,Support to integrate HDFS filesystem,2,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,fs,58,Segfault when calling `path_home()` ,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,fs,40,async io,0,FALSE,FALSE,TRUE,FALSE,1,0
 r-lib,fs,39,fs_watch,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,fs,31,rstudio addin to generate LS_COLORS,0,FALSE,FALSE,FALSE,FALSE,0,0
@@ -1013,9 +1055,7 @@ r-lib,gargle,23,Use user-supplied email to pre-select identity in consent screen
 r-lib,gargle,22,Uniform way to see the email attached to any token,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,gargle,14,Shiny auth?,3,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,gargle,3,Should we adopt default path for travis?,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,gh,77,Allow responses to be written directly to disk,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,gh,76,Sending results directly to disk,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,gh,74,Export gh_token(),4,FALSE,FALSE,FALSE,TRUE,1,0
+r-lib,gh,78,A simple interface to the GraphQL endpoint,2,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,gh,67,Rate limit helpers,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,gh,66,Bad failure mode,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,gh,57,"downloading binary file associated with a release (an ""asset"")",0,FALSE,FALSE,FALSE,TRUE,1,0
@@ -1035,6 +1075,7 @@ r-lib,ghurl,4,gh,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,ghurl,3,usethis,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,ghurl,2,devtools,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,ghurl,1,pkgdepends,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,httr,507,update linkedin example,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,httr,506,SSL Connection relies on pfx (p12),0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,httr,505,LinkedIn API Upgrade,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,httr,504,Linkedin demo error,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1048,7 +1089,7 @@ r-lib,httr,495,Normalize scopes in the hash; fixes #494,0,TRUE,FALSE,FALSE,FALSE
 r-lib,httr,494,Scopes should be sorted and name-stripped before hashing,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,httr,493,support for OAuth2 in Yahoo API,2,FALSE,FALSE,FALSE,TRUE,2,0
 r-lib,httr,492,"Yahoo Fantasy sub-resource GET function call, semicolon in URI",3,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,httr,491,oauth1.0_token or oauth2.0_token for vimeo?,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,httr,491,oauth1.0_token or oauth2.0_token for vimeo?,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,httr,490,Change default precision for POST requests,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,httr,488,Issue with NTLM authentication  (after curl 3.0 ),0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,httr,487,transfer closed with outstanding read data remaining,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1118,14 +1159,11 @@ r-lib,oldie,3,Rename to lifecycle,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,oldie,2,Better print method,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,osname,3,Tests,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,osname,2,README + manual,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pillar,101,Show as many characters as necessary for a string column,4,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pillar,101,Show as many characters as necessary for a string column,5,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,99,Literature review,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,97,Feature Request: pillar.round = FALSE,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,96,Scale Numbers In Columns Equally,4,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pillar,91,Keep signs adjacent to numerals in output,4,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pillar,90,Incorrect superscript formatting for scientific notation,5,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,89,Querying options,0,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,pillar,88,Error with Duration from lubridate,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,86,Lazy formatting,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,84,Control abbreviation of column data,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,82,Theming,6,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1135,12 +1173,14 @@ r-lib,pillar,53,"abbreviations for timezones, #25",24,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,pillar,47,Consider helpers API,5,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,45,Likert helper,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,pillar,43,Last observation carried forward,3,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,pillar,41,Engineering format for large numbers,1,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pillar,40,Trailing insignificant digits not printed?,11,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pillar,41,Engineering format for large numbers,2,FALSE,FALSE,FALSE,TRUE,2,0
+r-lib,pillar,40,Trailing insignificant digits not printed?,12,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,34,Better display for list columns if all elements have the same type,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,31,Provide machinery glimpse(),0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,25,Idea on datetimes/timezones,17,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pillar,2,Inline boxplot ,0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,pingr,8,Use processx / callr to run external ping,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pingr,7,timeout*1000 is harmful!,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pingr,6,Unit of return of ping_port is not clear,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pingr,5,Test failure with dev testthat,6,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pingr,2,Consider using nping,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1154,7 +1194,6 @@ r-lib,pkgapi,8,map: better S3 ,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgapi,7,map: include function arguments,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgapi,6,API listing for return types,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgapi,2,API listing for S4 methods,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgbuild,30,pkg_build_bg: build in the background,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgbuild,25,Check interaction between find_rtools() and RStudio auto installer,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgbuild,24,Better documentation for rtools on windows,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgdepends,92,Need to reinstall binary LinkingTo revdeps,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1187,105 +1226,52 @@ r-lib,pkgdepends,11,svn remote,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgdepends,10,url remote,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgdepends,9,local remote,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkgdepends,6,Better resolution and download reporting about failures,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,504,Put parentheses after function names in reference,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,503,Error building README: unused argument Updating README.md,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,502,"Sexpr issues: environment, working directory, multiple expressions",0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,499,<doi:> references in the DESCRIPTION,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,498,"unknown system macros (\doi, \CRANpkg, ...)",1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,497,horizontal scrolling for code blocks,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,494,Add special treatment for R consortium as funder,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,493,CITATION file rendering error: 'Error in if (!auto) { : argument is of length zero',2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,492,Use an optional build_path to protect sensitive information,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,490,order mismatch of finding README… & index: between docu & code?,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,489,request: article argument to build_articles(),0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,488,Separating Functions in Datasets in Documentation ,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,487,pkgdown does not remove reference pages if the Rd no longer exists,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,486,Examples using templates_path,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,485,Article titles may contain markdown formatting,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,484,"News page headings: not generated correctly, issues warning",1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,482,plain text and html support for navbar items via pkgdown.yml,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,481,Some links to pkgdown's pkgdown site are broken,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,480,Building site with RStudio pkgdown add-in fails on Windows,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,479,Make it possible to select single alias,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,478,Use colour in output more effectively,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,477,Save all files if using RStudio,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,474,reorder citation listing,2,TRUE,FALSE,FALSE,FALSE,1,0
-r-lib,pkgdown,473,"Show GitHub commit ID in ""References""",0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,470,"""Developed by ..."" and ""Site built with pkgdown."" are rendered incorrectly in Internet Explorer",0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,466,refactor alternating citations,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,464,Major backwards-compatible increase to flexibility for home page,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,463,how to handle vignettes with child documents?,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,461,404 Page not found error when following first link in README,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,460,orphan files are not cleaned up in building,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,459,rstudio addin doesn't show build messages and warnings,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,458,package functions in README.md linked to non-existing remote link,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,457,let user skip *some* vignettes,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,456,news output will be blank with certain subtitles,7,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,455,learnr integration,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,454,List some sample sites,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,452,Fix bug with navigation highlighting and zero-length paths,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,451,Error reading the DESCRIPTION file,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,450,Quick arguments to suppress or rename homepage sidebar sections,3,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,449,Make local hrefs even when explicitly referencing local package,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,448,Function to generate template _pkgdown.yml file,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,446,link github mentions and issues in news items,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,445,Add links to github issues if issue numbers are given in NEWS,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,444,Add release dates to news,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,443,pandoc: Unknown extension: smart,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,438,Add Open Graph meta tags,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,437,Ensure that formatting in section headings is correctly translated ,1,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,436,show method and class in reference listing,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,435,feature request: facilitate creating `_pkgdown.yml` via @category,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,434, Don't break if first NEWS section is `<h3>`,5,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,430,prevent sidebar from disappearing at page bottom,0,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,520,library() call in chunk causes error,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pkgdown,516,enforce UTF8 reading when internally writing to UTF-8,1,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,515,read citations with bespoke meta data,4,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,514,build_home and build_news encoding issue,3,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,pkgdown,504,Put parentheses after function names in reference,0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,502,"Sexpr issues: environment, working directory, multiple expressions",1,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,494,Add special treatment for R consortium as funder,0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,493,CITATION file rendering error: 'Error in if (!auto) { : argument is of length zero',6,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,479,Make it possible to select single alias,1,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,470,"""Developed by ..."" and ""Site built with pkgdown."" are rendered incorrectly in Internet Explorer",3,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,pkgdown,458,package functions in README.md linked to non-existing remote link,2,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,457,Skip selected vignettes,0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,455,learnr integration,0,FALSE,FALSE,TRUE,FALSE,1,0
+r-lib,pkgdown,452,Fix bug with navigation highlighting and zero-length paths,2,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,451,Error reading the DESCRIPTION file,6,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,450,Quick arguments to suppress or rename homepage sidebar sections,3,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,444,Add release dates to news,4,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,436,show method and class in reference listing,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,pkgdown,429,process and display orcid links,2,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,428,Explore netlify + travis build process,6,FALSE,FALSE,FALSE,TRUE,3,0
-r-lib,pkgdown,427,Should be able to set one_page option for news in yaml,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,426,add search capability to pkgdown,9,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,425,Colourise R output using ANSI escapes,2,TRUE,FALSE,FALSE,FALSE,2,0
-r-lib,pkgdown,424,Error building articles,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,423,build_site() adds an invalid regrex to .Rbuildignore,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,422,printing pkgdown pages from browser yields just one page,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,421,Feature request: Add support for new ORCID Feature in Description,0,FALSE,FALSE,FALSE,TRUE,8,0
-r-lib,pkgdown,419,<details> tag rendered incorrectly when used with r-chunk,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,418,ensure citations are read with explicit encoding,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,417,"Error building README, seems like scoping issue",6,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,416,non-ASCII input in a CITATION file without a declared encoding,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,415,Add copy to clipboard buttons to examples in reference pages,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,414,Standard way of linking to cheatsheets,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,411,error running pkgdown,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,407,generate pkgdown data first,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,406,Improve detection of badges on homepage,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,404,Markdown within <div> is not rendered in README,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,403,tables should have a bottom margin,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,402,fixes #342 partially,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,pkgdown,401,Pkgdown in the wild,2,FALSE,FALSE,FALSE,TRUE,3,0
-r-lib,pkgdown,400,FR: Generate sitemap.xml files,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,396,search,2,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,394,Doesn't play well with pandoc + Rmd,3,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,393,Co-existence of docs for CRAN and dev version,4,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,392,"  [feature suggestion] auto-preview on build_home(), build_reference(), etc.",0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,391,README.Rmd at top level leaves a README.html file,5,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,389,Margins are different on different pages,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,387,\cr tag from .Rd files is ignored,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,386,First paragraph of README.Rmd gets swallowed in index.html,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,384,After running build::site() index.html opens in text editor,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,382,Considering ability to build single files,1,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,381,"CONDUCT.md, CONTRIBUTING.md, and friends",0,FALSE,FALSE,FALSE,TRUE,2,0
-r-lib,pkgdown,379,Add a favicon,3,FALSE,FALSE,FALSE,TRUE,2,0
-r-lib,pkgdown,375,support for custom syntax highligthing,0,FALSE,FALSE,FALSE,TRUE,1,0
-r-lib,pkgdown,372,Incorrect parsing of Latex quotes,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,pkgdown,364,Capture session info somewhere,1,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,pkgdown,362,always write UTF8 file when render page,2,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,427,Should be able to set one_page option for news in yaml,0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,426,add search capability to pkgdown,10,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,421,Add support for new ORCID Feature in Description,0,FALSE,FALSE,TRUE,FALSE,8,0
+r-lib,pkgdown,419,<details> tag rendered incorrectly when used with r-chunk,4,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,416,non-ASCII input in a CITATION file without a declared encoding,0,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,pkgdown,411,error running pkgdown,2,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,pkgdown,404,Markdown within <div> is not rendered in README,6,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,pkgdown,402,fixes #342 partially,2,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,400,FR: Generate sitemap.xml files,3,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pkgdown,396,search,16,FALSE,FALSE,TRUE,FALSE,1,0
+r-lib,pkgdown,394,Build of index.html fails due to path issues with README.Rmd,6,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,pkgdown,393,Co-existence of docs for CRAN and dev version,4,FALSE,FALSE,TRUE,FALSE,1,0
+r-lib,pkgdown,387,\cr tag from .Rd files is ignored,1,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,pkgdown,382,Build a single article,2,FALSE,FALSE,TRUE,FALSE,1,0
+r-lib,pkgdown,381,"CONDUCT.md, CONTRIBUTING.md, and friends",2,FALSE,FALSE,TRUE,FALSE,2,0
+r-lib,pkgdown,364,Capture session info somewhere,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,pkgdown,343,Embed htmlwidgets in Examples,15,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,pkgdown,342,Support rendering of pdf articles (e.g. using rticles templates),9,FALSE,FALSE,TRUE,FALSE,6,0
-r-lib,pkgdown,339,build_reference encoding issue,17,FALSE,TRUE,FALSE,FALSE,0,0
 r-lib,pkgdown,337,"build_articles, only check if Rmd time < html time",9,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,pkgdown,327,Consider second level of nesting in reference index ,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,pkgdown,323,Implement bookdown like cross references,11,FALSE,FALSE,TRUE,FALSE,4,0
 r-lib,pkgdown,288,Parse usage section,2,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,pkgdown,270,Auto link github issue numbers and contributor names,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,pkgdown,234,Link functions to their source code on github,11,FALSE,FALSE,TRUE,FALSE,3,0
+r-lib,pkginstall,37,Temporary directory on a different partition,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pkginstall,36,Avoid recompiling attributes for tarball installs,1,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,pkginstall,35,Don't recompile Rcpp attributes,2,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,pkginstall,34,Add an rcmdinstall_process class,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkginstall,32,Reorganize a bit,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkginstall,30,Fail if cannot lock,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,pkginstall,28,Use cli::cli,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1331,7 +1317,7 @@ r-lib,processx3,45,Make it work (better) with parallel's fork clusters,0,FALSE,F
 r-lib,processx3,36,Linux (+ other Unixes?): register a death signal when the parent dies,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,processx3,27,Supply standard input,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,processx3,13,Get process info,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,progress,62,purrr example in readme?,6,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,progress,62,purrr example in readme?,7,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,progress,56,cpp version won't work on windows,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,progress,48,Allow 'total = NULL' or 'total = Inf'?,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,progress,47,Allow setting of 'current' character in progress bar?,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1346,6 +1332,8 @@ r-lib,progress,28,Option for progress bar format,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,progress,27,Functions to add progress bars to for loops and apply functions,15,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,progress,26,Multiple progress bars,4,FALSE,FALSE,FALSE,TRUE,3,0
 r-lib,progress,10,Specify width of tags,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,R6,139,Clone a class?,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,R6,138,Assign methods/variables from inherited class as private?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,R6,136,Inherit from an instance,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,R6,134,Should document how and when environment of methods is assigned,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,R6,131,Need to move CI config from wch to r-lib,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1369,6 +1357,7 @@ r-lib,rappdirs,20,rename appdirs to rappdirs in README,0,TRUE,FALSE,FALSE,FALSE,
 r-lib,rappdirs,19,get_os() is private function but used in public docs,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rappdirs,18,typo fix: library(appdirs) --> library(rappdirs),0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,rappdirs,16,Enable AppVeyor testing,0,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,rcmdcheck,65,signal an error when rcmdcheck objects are printed with check errors,11,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rcmdcheck,64,Check with no suggested packages installed,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rcmdcheck,63,Provide rcmdcheck_detail class?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rcmdcheck,62,Set _R_CHECK_TESTS_NLINES_ = 0 ?,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1391,10 +1380,10 @@ r-lib,rcmdcheck,12,Whitelist support?,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rematch2,4,CRAN release?,5,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rematch2,2,Add tbl_df class to match columns in re_exec() and re_exec_all(),0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rematch2,1,pipe-friendly version of re_match?,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,remotes,127,pass credentials to install_git (#106),0,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,remotes,127,pass credentials to install_git (#106),4,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,remotes,126,Install the latest release or a pull request for private repos,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,remotes,125,Ignore .Rbuildignore for install_local(),1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,remotes,122,install_github always installs even if no change,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,remotes,122,install_github always installs even if no change,6,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,remotes,120,Old Bioconductor versions,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,remotes,119,"issue using source(""https://install-github.me/ ..",0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,remotes,117,Remotes doing something odd to package descriptions?,2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1418,7 +1407,7 @@ r-lib,remotes,93,Handle local packages that have moved,4,FALSE,TRUE,FALSE,FALSE,
 r-lib,remotes,92,Cannot pass args through install_git ,0,FALSE,TRUE,FALSE,FALSE,0,0
 r-lib,remotes,91,install_version doesn't leverage config values when fetching Meta/archive.rds,4,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,remotes,89,Install from github failing on Windows,1,FALSE,TRUE,FALSE,FALSE,0,0
-r-lib,remotes,88,install_github not installing dependencies even with updated version of devtools,6,FALSE,TRUE,FALSE,FALSE,0,0
+r-lib,remotes,88,install_github not installing dependencies even with updated version of devtools,7,FALSE,TRUE,FALSE,FALSE,0,0
 r-lib,remotes,87,auth_token not passed to additional remotes,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,remotes,86,install_bitbucket fails when dependencies are private,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,remotes,85,Default for install_bioc() should query BiocInstaller::biocVersion() rather than defaulting to the trunk branch,0,FALSE,TRUE,FALSE,FALSE,0,0
@@ -1493,8 +1482,13 @@ r-lib,revdepcheck,23,Set NOT_CRAN to true for the checks ?,7,FALSE,FALSE,FALSE,F
 r-lib,revdepcheck,22,Extract the BugReports field as well,1,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,revdepcheck,20,Print timing information somewhere,3,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,revdepcheck,15,Handle download errors,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,rlang,410,Review chr() etc doc before release,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,rlang,406,chr() -> dots_chr()?,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,rlang,418,Soft-deprecate or question the data argument in new_environment(),0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,rlang,417,unquoting in for-loops since v0.2.0?,6,FALSE,FALSE,FALSE,FALSE,1,0
+r-lib,rlang,416,Entry point Not Found,9,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,rlang,415,dot_names,2,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,rlang,414,enexprs() should ignore missing named arguments as well,0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,rlang,413,Should with_handlers() allow unclassed handlers,0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,rlang,412,Should parse_exprs() also take list of srcrefs?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rlang,400,Consider renaming invoke to call_invoke/invoke_call,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,rlang,398,Allow for duplicated arguments to `call_modify`,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,rlang,396,`invoke` wrongly quotes numeric arguments as symbols,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1590,21 +1584,29 @@ r-lib,sessioninfo,9,Show the search list in `package_info`,0,FALSE,FALSE,FALSE,T
 r-lib,sessioninfo,6,Provide a way to compare session info from two systems,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,sessioninfo,3,Colored output,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,sessioninfo,1,Pretty print session info in Rmds,1,FALSE,FALSE,FALSE,TRUE,1,0
+r-lib,styler,360,How to Debug Failures,2,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,359,Failing pkgdown causes build to fail,0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,355,Pipe with conditions,2,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,353,Token-dependent indention in combination with standard indention,1,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,352,Wrong indention level of EQ_SUB token,1,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,351,Inconsistent indention for EQ_SUB,2,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,styler,350,Cosmetics,0,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,styler,342,Line broken again after first named argument,2,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,styler,341,CRAN-ready for 1.0.1,2,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,342,Line broken again after first named argument,5,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,341,CRAN-ready for 1.0.1,3,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,styler,340,Other style guides,3,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,styler,338,CRAN Submission schedule for new version of styler,3,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,styler,332,Style for examples in roxygen or .Rd files,5,FALSE,FALSE,FALSE,FALSE,3,0
-r-lib,styler,322,remove spaes after !! and !!!,1,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,styler,321,Styling around Bang-bang ,0,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,styler,308,Avoid spaces around ^,4,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,styler,332,Style for examples in roxygen or .Rd files,6,FALSE,FALSE,FALSE,FALSE,3,0
 r-lib,svglite,90,Saved svg size does not correspond to specified,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,svglite,89,use same default height and width values for svglite() and the inline functions?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,svglite,86,Extremely low resolution of a raster part of svg,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,svglite,84,Support multiple pages,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,svglite,6,Support svgz,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,tar,1,CRAN submission,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,testthat,723,Fix typo in check_reporter function,0,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,testthat,722,typo: check_repoter should be check_reporter,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,testthat,721,"Do not handle warnings when options(""warn"") >= 2",0,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,testthat,720,test_that does not search for S3 methods the same as its calling environment,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,testthat,719,Helper for invisible output,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,718,cat_line namespace error - maybe require cli >= 1.0.0 ?,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,717,Run tests only once in CI (e.g. Travis) setting with covr enabled,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,716,fix typo,0,TRUE,FALSE,FALSE,FALSE,0,0
@@ -1619,7 +1621,7 @@ r-lib,testthat,707,changed the expect_equal_to_reference function to hand over t
 r-lib,testthat,705,"Failed tests don't print in the progress section, but appear in the results",3,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,703,Deprecate is_true and is_false,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,702,Provide expectations inspired by rlang `is_` functions,1,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,testthat,700,`library` before `context` throws error?,3,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,testthat,700,`library` before `context` throws error?,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,699,Inspecting the name of the package being tested,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,698,Fix typo in NEWS.md ,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,testthat,697,Should TESTTHAT envvar be set inside individual `test_that()`s?,1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1641,7 +1643,7 @@ r-lib,testthat,667,Should expect_s3_class() check for identical class vectors?,1
 r-lib,testthat,666,Further improving the progress reporter,4,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,testthat,659,Vignette on using testthat outside the context of a package,8,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,testthat,658,Post-mortem debugging?,1,FALSE,FALSE,TRUE,FALSE,2,0
-r-lib,testthat,657,Vignette for using Reporters,1,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,testthat,657,Vignette for using Reporters,2,FALSE,FALSE,FALSE,FALSE,0,0
 r-lib,testthat,656,Typo: check_repoter,5,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,testthat,655,Enable `expect_*()` to directly compare values of expressions?,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,testthat,644,Multiple C++ test files,1,FALSE,FALSE,TRUE,FALSE,0,0
@@ -1650,38 +1652,38 @@ r-lib,testthat,486,FR: Run tests in parallel,1,FALSE,FALSE,TRUE,FALSE,4,0
 r-lib,testthat,447,Extract code around compare() to separate package,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,tracer,2,Export formatting routine?,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,tracer,1,recover() replacement,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,usethis,272,Refactor proj_get() and proj_set(),3,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,usethis,271,include `use_bioc_badge`,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,usethis,270,Remove links from use_tidy_contributing(),0,TRUE,FALSE,FALSE,FALSE,0,0
-r-lib,usethis,269,Remove travis check from use_tidy_contributing(),2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,usethis,267,use_git_config(),0,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,usethis,265,Behaviour of proj_set() on a non-project folder,2,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,usethis,264,use_rstudio() .... hmmmm,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,usethis,292,Update needed- CONTRIBUTING documentation,2,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,usethis,291,GitHub API error (401): 401 Unauthorized,2,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,usethis,290,Add descriptions for `use_github_labels()`,1,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,usethis,289,Give a hint on how to restart session?,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,usethis,287,A `quiet` argument in `use_description()`?,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,usethis,285,Add spell checker support,1,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,usethis,283,fix markdown link spacing,3,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,usethis,282,Feedback on setup article,10,FALSE,FALSE,FALSE,TRUE,0,1
+r-lib,usethis,281,use_article(),0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,usethis,276,Refactor use_course(),0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,usethis,274,Data doc template?,4,FALSE,FALSE,TRUE,FALSE,3,0
+r-lib,usethis,273,use_gist,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,263,Blog post,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,usethis,262,CRAN release,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,usethis,260,use_tidy_github_saved_replies(),2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,250,scoped_temporary_thing(): should the directory be deleted upon frame exit?,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,233,create_package() should document options,1,FALSE,FALSE,FALSE,FALSE,0,0
-r-lib,usethis,232,determine and enforce minimum version for backports and curl,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,231,Consider adding edit_r_buildignore(),3,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,usethis,226,Option to do a system check via use_course(),0,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,usethis,226,Option to do a system check via use_course(),5,FALSE,FALSE,TRUE,FALSE,1,0
 r-lib,usethis,224,Feature Request: use_github_pages to activate GitHub Pages building,1,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,usethis,223,use_version function,12,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,usethis,221,Can use_github() resume where it left off?,1,FALSE,FALSE,TRUE,FALSE,2,0
-r-lib,usethis,218,README template for a package should include install.packages(),0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,211,Consistent message style,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,208,more convenient TDD support,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,200,use_dev_version should always set package version,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,198,Path reporting,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,195,Badge handling,18,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,usethis,191,Link to obvious chapters in R Packages from help files,2,FALSE,FALSE,FALSE,FALSE,1,0
-r-lib,usethis,188,Idea: function to increment version number,1,FALSE,FALSE,TRUE,FALSE,2,0
+r-lib,usethis,191,Link to obvious places in R Packages and WRE from help files,3,FALSE,FALSE,FALSE,FALSE,1,0
 r-lib,usethis,186,"browse_github(""foo"") should fall back to https://github.com/cran/foo",0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,179,use_tidy_versions shouldn't version base/recommended packages,1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,178,"Consider ""skip"" option when overwriting files",0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,177,Use fs when released,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,176,Add tidyverse-org checklist,1,FALSE,FALSE,TRUE,FALSE,0,0
-r-lib,usethis,172,"use_package(""tidyverse"") should generate a warning",3,FALSE,FALSE,TRUE,FALSE,0,0
+r-lib,usethis,172,"use_package(""tidyverse|devtools"") should generate a warning",4,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,169,use_project() should create DESCRIPTION?,2,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,163,Decide on convention for scripts directory,0,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,159,"Review all uses of getOption(""devtools.SOMETHING"")",0,FALSE,FALSE,TRUE,FALSE,0,0
@@ -1701,7 +1703,8 @@ r-lib,usethis,23,use_cla(),1,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,usethis,22,Scripts to use clang-format locally and on travis,5,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,usethis,11,Could use_travis() turn on repo automatically?,9,FALSE,FALSE,TRUE,FALSE,0,0
 r-lib,whoami,1,Cache GH results,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-lib,withr,66,Add action argument to with_temp_libpaths(),2,TRUE,FALSE,FALSE,FALSE,0,0
+r-lib,withr,70,with_envvar_clear,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,withr,69,with_makevars / set_makevars improvements,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,withr,64,Suggestion: literal with_dev function,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,withr,63,Suggestion: with_temp_dir,4,FALSE,FALSE,FALSE,TRUE,1,0
 r-lib,withr,59,New feature: with_cluster(),0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1717,9 +1720,19 @@ r-lib,xml2,197,Fix install on OSX if Anaconda is installed,0,TRUE,FALSE,FALSE,FA
 r-lib,xml2,189,xml_validate() fails for constructed XML,1,FALSE,TRUE,FALSE,FALSE,0,0
 r-lib,xml2,183,"Added a ""user agent"" section to `read_html`/`read_xml` documentation.",0,TRUE,FALSE,FALSE,FALSE,0,0
 r-lib,xml2,171,xml_new_root should accept an xml_namespace object,0,FALSE,FALSE,FALSE,FALSE,0,0
+r-lib,zeallot,44,!!! tidy eval in LHS of %<-% ?,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,zeallot,43,%<-% and %>%,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,zeallot,42,Can we get %<->%?,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,zeallot,41,Assign multiple types?,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,zeallot,40,Formally support and test R 3.1 and greater?,1,FALSE,FALSE,FALSE,TRUE,1,0
+r-lib,zeallot,38,I don’t understand destructuring,1,FALSE,FALSE,FALSE,TRUE,0,0
+r-lib,zeallot,37,Provide partition,1,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,zip,8,CRAN update,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,zip,7,Unzip,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-lib,zip,3,Windows cannot complete the extraction. The Compressed (zipped) Folder '<file path>' is invalid,8,FALSE,FALSE,FALSE,TRUE,0,0
+r-dbi,bigrquery,202,Adds DBI/dplyr refs to Readme,0,TRUE,FALSE,FALSE,FALSE,0,0
+r-dbi,bigrquery,201,Translation,0,TRUE,FALSE,FALSE,FALSE,0,0
+r-dbi,bigrquery,200,"? could you check, please",1,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,199,Long download times for large query results in bigrquery,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,198,Add names to schema from git_table,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,bigrquery,196,Travis setup broken,0,FALSE,FALSE,FALSE,TRUE,2,0
@@ -1741,7 +1754,7 @@ r-dbi,bigrquery,176,Window function translation to SQL,0,FALSE,FALSE,FALSE,TRUE,
 r-dbi,bigrquery,175,Fix all() SQL translation,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,bigrquery,174,`all()` translation to SQL,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,173,`%||%` translation to SQL,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-dbi,bigrquery,172,"copy_table raises argument ""body"" is missing, with no default error",1,FALSE,FALSE,FALSE,TRUE,0,0
+r-dbi,bigrquery,172,"copy_table raises argument ""body"" is missing, with no default error",2,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,171,return empty table with no-result query,3,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,170,"Error in insert_upload_job ""Stream error in the HTTP/2 framing layer""",1,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,bigrquery,169,"query causes bigrquery to fail, likely due to page_size memory issue",2,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1829,6 +1842,8 @@ r-dbi,DBItest,71,Test MonetDB and MonetDBlite in Travis CI,0,FALSE,FALSE,FALSE,F
 r-dbi,DBItest,64,Identifiers should be quoted,5,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,DBItest,63,"New argument ""params"" to dbSendQuery(), dbSendStatement(), dbGetQuery() and dbExecute()",1,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,DBItest,45,different SQL dialects among DBMS: in test_result: column alias & FROM stmt.),2,FALSE,FALSE,FALSE,FALSE,0,0
+r-dbi,odbc,157,R Code Execution Error,0,FALSE,FALSE,FALSE,TRUE,0,0
+r-dbi,odbc,156,Unable to query long strings in cell contents with SQL Server,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,odbc,155,MSSQL Connection Description,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,odbc,153,`encoding` parameter in dbConnect,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-dbi,odbc,152,Cannot install odbc on SUSE Linux Server 11,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1879,12 +1894,10 @@ r-dbi,RMariaDB,65,Installation fails on macOS when built against mysql-connector
 r-dbi,RMariaDB,63,Reenable DBItest and DBI remote,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMariaDB,62,Remove configure warning for Connector/C,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMariaDB,32,Internal: Nicer conversion from RcppNullable to API strings,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-dbi,RMariaDB,29,what happened to dbListFields?,5,FALSE,FALSE,FALSE,TRUE,0,0
+r-dbi,RMariaDB,29,what happened to dbListFields?,6,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMariaDB,19,Eliminate MyConnectionPtr,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMariaDB,11,LOAD DATA LOCAL INFILE vs INSERT INTO,10,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMariaDB,2,Add vignette discussing how to use google cloud sql,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-dbi,RMySQL,216,Rename organization,0,TRUE,FALSE,FALSE,FALSE,0,0
-r-dbi,RMySQL,215,Patch to build with the latest mariadb MYSQL_SERVER_VERSION,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,214,RMySQL fails build with mariadb >10.4,8,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMySQL,213,Rows missing on inserting data frame with large character field,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMySQL,212,Implement RStudio Connection Contract,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1895,14 +1908,11 @@ r-dbi,RMySQL,208,Date datetype is written as text,0,FALSE,FALSE,FALSE,FALSE,1,0
 r-dbi,RMySQL,205,RMysql encoding utf8 issue,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,204,Query table of many DECIMAL columns causes error in terminal,5,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,200,dbWriteTable inserts partial data for large data frames ,2,FALSE,FALSE,FALSE,FALSE,0,0
-r-dbi,RMySQL,198,"add upsert support with an additonal parameter ""onduplicate""",2,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,196,First time query often produces error,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,194,dbWriteTable options,4,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMySQL,193,RMySQL system error: 10060,8,FALSE,FALSE,FALSE,FALSE,4,0
 r-dbi,RMySQL,187,"R abends: dbWriteTable - new table with overwrite=T, append=F",1,FALSE,FALSE,FALSE,TRUE,0,0
-r-dbi,RMySQL,185,add 'ssl' parameter,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,183,dbWriteTable into utf-8 MySQL DB from windows,9,FALSE,FALSE,FALSE,FALSE,0,0
-r-dbi,RMySQL,182,Allow to fully override the PKG_CFLAGS and PKG_LIBS,1,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,181,Can't build on OSX 10.12.3,1,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,180,could not run statement: The used command is not allowed with this MySQL version,2,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMySQL,179,Very slow SELECT queries,1,FALSE,FALSE,FALSE,FALSE,0,0
@@ -1926,7 +1936,6 @@ r-dbi,RMySQL,142,"dbWriteTable(Connection, character, character) not working wit
 r-dbi,RMySQL,138,Typing name of disconnected connection after running dbUnloadDriver() crashes R on Windows,8,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,133,dbColumnInfo() should not return factors,0,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,126,Forever fetching zero-row data frame when query is killed at server side,1,FALSE,FALSE,FALSE,FALSE,1,0
-r-dbi,RMySQL,122,WIP: Fix compilation in Windows,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,118,Turkish characters R to MySQL write problem,12,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RMySQL,99, libmysqlclient.so.18: cannot open shared object file: No such file or directory ,22,FALSE,FALSE,FALSE,FALSE,0,0
 r-dbi,RMySQL,68,Upsert for dbWriteTable,1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1934,7 +1943,7 @@ r-dbi,RMySQL,66,Dot to underscore conversion in column names,2,FALSE,FALSE,FALSE
 r-dbi,RMySQL,40,Execution halted with large queries,21,FALSE,FALSE,FALSE,FALSE,2,0
 r-dbi,RPostgres,175,creates error when trying to connect to a different schema,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RPostgres,174,GSSAPI authentication not supported,0,FALSE,FALSE,FALSE,TRUE,0,0
-r-dbi,RPostgres,173,Typname,4,TRUE,FALSE,FALSE,FALSE,0,0
+r-dbi,RPostgres,173,Typname,7,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RPostgres,172,Encoding of column names and error messages,0,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RPostgres,171,Schema support,0,TRUE,FALSE,FALSE,FALSE,0,0
 r-dbi,RPostgres,170,Support for field type citext,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1948,7 +1957,7 @@ r-dbi,RPostgres,139,libpq expects knowledge about data types for parametrized qu
 r-dbi,RPostgres,137,[feature request] - dbWritetable from local/remote file,0,FALSE,FALSE,FALSE,TRUE,1,0
 r-dbi,RPostgres,134,foreign tables are not recognised,6,FALSE,FALSE,FALSE,TRUE,0,0
 r-dbi,RPostgres,117,Implement pgCancel,1,FALSE,FALSE,FALSE,TRUE,1,0
-r-dbi,RPostgres,116,Client connection drops when using pgbouncer,5,FALSE,FALSE,FALSE,TRUE,0,0
+r-dbi,RPostgres,116,Client connection drops when using pgbouncer,5,FALSE,FALSE,FALSE,TRUE,1,0
 r-dbi,RPostgres,114,Round trip geometry columns,11,FALSE,FALSE,FALSE,TRUE,2,0
 r-dbi,RPostgres,112,Handle bigint,1,TRUE,FALSE,FALSE,FALSE,1,0
 r-dbi,RPostgres,92,dbColumnInfo doesn't match DBI spec,3,FALSE,FALSE,FALSE,TRUE,0,0
@@ -1988,7 +1997,7 @@ r-dbi,SQL,5,Appropriately serialize list of raw vectors ,0,FALSE,FALSE,FALSE,TRU
 hadley,emo,39,Two new functions perhaps?,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,emo,38,Adds documentation of emo::ji_find to README,0,TRUE,FALSE,FALSE,FALSE,0,0
 hadley,emo,37,hmm emoji not available,0,FALSE,FALSE,FALSE,TRUE,0,0
-hadley,emo,36,Submodules means that install_github doesn't work,1,FALSE,FALSE,FALSE,TRUE,0,0
+hadley,emo,36,Submodules means that install_github doesn't work,2,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,emo,35,Using emo before plotly in rmd breaks plotly,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,emo,34,emo package dependencies not showing up in tools::package_dependencies,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,emo,33,Use in pdf .Rmd,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2194,6 +2203,8 @@ hadley,purrrlyr,5,"collate=""rows"" strips Date objects into numeric",0,FALSE,FA
 hadley,purrrlyr,4,Fixed small typo in by_row docs & roxygenised them,0,TRUE,FALSE,FALSE,FALSE,0,0
 hadley,purrrlyr,3,"collate=""rows"" strips factors to ints",0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,purrrlyr,2,Document recommended tidyverse alternatives to purrrlyr functions?,1,FALSE,FALSE,FALSE,TRUE,8,0
+hadley,rvest,213,Replacing deprecated functions in README,0,TRUE,FALSE,FALSE,FALSE,0,0
+hadley,rvest,212,Follow_link with i = 'string' and i = integer in the same time,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,rvest,211,read_html() sometime fetches data and sometimes return null,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,rvest,210,html_nodes limits the output to 24 items,0,FALSE,FALSE,FALSE,TRUE,0,0
 hadley,rvest,209,Resolve tidyverse name clashes,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2348,9 +2359,9 @@ jimhester,gmailr,23,Use `edit()` to write emails,0,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,gmailr,15,"message(format = c(""full"", ""minimal"", ""raw"")) is missing ""metadata""",1,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,gmailr,10,make retrieving attachments easier,0,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,gmailr,7,inserting messages into existing threads,0,FALSE,FALSE,FALSE,FALSE,0,0
-jimhester,lintr,295,Linting Google Style variable and function naming,0,FALSE,FALSE,FALSE,TRUE,0,0
+jimhester,lintr,295,Linting Google Style variable and function naming,3,FALSE,FALSE,FALSE,TRUE,1,0
 jimhester,lintr,293,Getting issue when running lint on file,0,FALSE,FALSE,FALSE,TRUE,0,0
-jimhester,lintr,289,lintr not working with flycheck,0,FALSE,FALSE,FALSE,TRUE,0,0
+jimhester,lintr,289,lintr not working with flycheck,1,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,288,`with_defaults` not working (as expected),1,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,287,Don't run lintr during covr run,0,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,286,lintr mistakenly identifies commented code,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2368,7 +2379,7 @@ jimhester,lintr,265,Lintr should lint Roxygen documentation examples,0,FALSE,FAL
 jimhester,lintr,263,Add ALE to the README if you want,0,FALSE,FALSE,FALSE,TRUE,5,0
 jimhester,lintr,259,"""(("" is a left paren space violation?",3,FALSE,FALSE,FALSE,TRUE,4,0
 jimhester,lintr,256,Can't lint file with Hexa Line feed,0,FALSE,FALSE,FALSE,TRUE,0,0
-jimhester,lintr,253,commas and spaces before and after,1,FALSE,FALSE,FALSE,TRUE,0,0
+jimhester,lintr,253,commas and spaces before and after,3,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,252,Plain Code Blocks in RMarkdown,1,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,251,expect_lint_free assumes package is in the working directory by default,0,FALSE,FALSE,FALSE,TRUE,0,0
 jimhester,lintr,250,Nonlocal variables,3,TRUE,FALSE,FALSE,FALSE,0,0
@@ -2472,12 +2483,14 @@ gaborcsardi,secret,23,Helpers for retrieving frequently used public keys?,1,FALS
 gaborcsardi,secret,20,list_secrets() fails with missing vault argument,2,FALSE,FALSE,FALSE,TRUE,0,0
 gaborcsardi,secret,17,Import key from keybase.io,0,FALSE,FALSE,FALSE,TRUE,1,0
 gaborcsardi,secret,2,Store the password on the keyring ,0,FALSE,FALSE,FALSE,TRUE,0,0
-topepo,caret,841,"savePredictions = ""final""",1,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,caret,843,How to recommend new algorithms...,0,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,caret,842,`binaryEncoding` and/or `numericalEncoding` in `preProcess`.,0,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,caret,841,"savePredictions = ""final""",2,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,caret,840,Caret/ggplot2 issue?,1,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,caret,839,Typo in 04-Basic.Rmd,1,TRUE,FALSE,FALSE,FALSE,0,0
 topepo,caret,837,Help adding new metrics for output in regression tasks,5,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,caret,836,Sensitivity and Specificity are reversed in Confusion matrix,2,FALSE,FALSE,FALSE,TRUE,0,0
-topepo,caret,834,Looking for time complexity for a few models,7,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,caret,834,Looking for time complexity for a few models,9,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,caret,832,Fixed typo,1,TRUE,FALSE,FALSE,FALSE,0,0
 topepo,caret,831,Validation curve plot function,2,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,caret,830,"Feature request: metric = ""deviance"" when running logistic regression via glmnet",1,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2567,10 +2580,8 @@ topepo,caret,14,add an `extract` class,0,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,caret,13,update documentation about `returnResamp`,0,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,caret,12,Issue a warning with `update.train`,0,FALSE,TRUE,FALSE,FALSE,0,0
 topepo,caret,7,Investigate allowing prediction function to return multiple values,0,FALSE,FALSE,FALSE,FALSE,0,0
-topepo,recipes,125,Errors in many `bake` methods when `newdata` has class `grouped_df`,0,FALSE,FALSE,FALSE,TRUE,0,0
-topepo,recipes,124,Feature Request: step_log1p,2,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,recipes,129,fixed typos,0,TRUE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,123,LabelEncoder-like functionality,3,FALSE,FALSE,FALSE,TRUE,0,0
-topepo,recipes,121,fixed typos in documentation steps and checks,2,TRUE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,120,Step for One Hot Encoding ,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,recipes,114,check if numerical values are in the domain,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,recipes,113,check distribution shift categorical variables,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2581,7 +2592,6 @@ topepo,recipes,105,Possible to use recipes for novel levels in testing data?,8,F
 topepo,recipes,88,faster processing for a large number of columns,1,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,recipes,60,fault tolerance,0,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,48,parallelization,0,FALSE,FALSE,FALSE,FALSE,0,0
-topepo,recipes,37,time variable lagging step,0,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,36,expand imputation methods using simputation,0,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,35,autoencoder step,14,FALSE,FALSE,FALSE,FALSE,0,0
 topepo,recipes,22,Add steps for basis functions,3,FALSE,FALSE,FALSE,FALSE,0,0
@@ -2589,8 +2599,7 @@ topepo,rsample,32,Block bootstrapping (eg time series),7,FALSE,FALSE,FALSE,TRUE,
 topepo,rsample,31,Concordance in Survival Analysis example,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,rsample,28,Combination of rsample with Amelia for missing values,2,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,rsample,14,summary and analysis code,4,FALSE,FALSE,FALSE,FALSE,0,0
-topepo,yardstick,17,Metrics in confusion matrix consistent with caret?,7,FALSE,FALSE,FALSE,TRUE,0,0
-topepo,yardstick,16,make roc_curve function,0,FALSE,FALSE,FALSE,TRUE,0,0
+topepo,yardstick,17,Metrics in confusion matrix consistent with caret?,9,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,yardstick,15,Add AUC and concordance methods,1,TRUE,FALSE,FALSE,FALSE,0,0
 topepo,yardstick,11,metrics ,1,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,yardstick,10,confusion matrix plot function,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2613,6 +2622,7 @@ topepo,Cubist,14,ggplot methods,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,Cubist,12,add committee argument to predict,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,Cubist,8,Possible memory leak Cubist,0,FALSE,FALSE,FALSE,TRUE,0,0
 topepo,Cubist,6,Add an option to set maxd,0,FALSE,FALSE,FALSE,TRUE,0,0
+lionel-,vdiffr,27,Fix the way of stripping versions,0,TRUE,FALSE,FALSE,FALSE,0,0
 lionel-,vdiffr,26,Cannot create the svg object,23,FALSE,FALSE,FALSE,TRUE,0,0
 lionel-,vdiffr,25,testthat / vdiffr could provide a hint to use vdiffr::manage_cases(),0,FALSE,FALSE,FALSE,TRUE,0,0
 lionel-,vdiffr,24,Shiny app should exit when all cases validated,0,FALSE,FALSE,FALSE,TRUE,0,0
@@ -2636,7 +2646,6 @@ lionel-,ggstance,15,Modify bars in `geom_pointrangeh`,0,FALSE,FALSE,FALSE,TRUE,0
 lionel-,ggstance,14,x y axis issue,0,FALSE,FALSE,FALSE,TRUE,0,0
 lionel-,ggstance,13,Horizontal summary functions,3,TRUE,FALSE,FALSE,FALSE,0,0
 lionel-,fontquiver,8,How to add new fonts w/o needing to change this package?,4,FALSE,FALSE,FALSE,TRUE,0,0
-klutometis,roxygen,715,\code{\link{function_name()}} not working,0,FALSE,FALSE,FALSE,TRUE,0,0
 klutometis,roxygen,713,Maintain interface compatibility for roclet_process() and perhaps other generics,0,FALSE,FALSE,FALSE,TRUE,0,0
 klutometis,roxygen,711,Fix partial matching,0,TRUE,FALSE,FALSE,FALSE,0,0
 klutometis,roxygen,710,Unclear warning of missing @description value,0,FALSE,FALSE,FALSE,TRUE,0,0
