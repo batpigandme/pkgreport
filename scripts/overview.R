@@ -104,3 +104,5 @@ write_csv(repos, data_path("overview.csv"), na = "")
 # write_csv(issues, data_path("issues.csv"), na = "")
 write_csv(issues_no_labs, data_path("issues.csv"), na = "")
 
+write_rds(repos, data_path("overview.Rds"))
+write_rds(issues, data_path("issues.Rds"))
