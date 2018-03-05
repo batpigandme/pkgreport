@@ -75,8 +75,8 @@ issues <- issues %>%
   left_join(reactions_sum, by = c("owner", "repo", "number")) %>%
   replace_na(list(reaction_p1 = 0L, reaction_other = 0L))
 
-issues %>% arrange(desc(reaction_p1))
-issues %>% arrange(desc(reaction_other))
+issues <- issues %>%
+  arrange(desc(reaction_p1))
 
 issues_sum <- issues %>%
   group_by(owner, repo) %>%
@@ -92,11 +92,16 @@ issues_sum <- issues %>%
 
 repos <- repos %>% left_join(issues_sum, by = c("owner", "repo"))
 
-# Create issues df without labels column for csv
+# Arrange repos by watchers ----------------------------------------------
+repos <- repos %>%
+  arrange(desc(watchers))
+
+# Create issues df without labels column for csv ------------------------------
 # Issues less labs
 
 issues_no_labs <- issues %>%
-  select(-labels)
+  select(-labels) %>%
+  arrange(desc(reaction_p1, comments, reaction_other))
 
 # Share on googlesheets ---------------------------------------------------
 
