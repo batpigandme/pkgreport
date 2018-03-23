@@ -1,38 +1,36 @@
 ---
 title: "pkgreporting"
-author: "Mara Averick"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r include=FALSE}
+```{r libs, include = FALSE}
 suppressPackageStartupMessages(library(tidyverse))
 library(DT)
 ```
 
-```{r load-iss, include=FALSE}
+```{r load-iss, include = FALSE}
 load(here::here("data", "issues.RData"))
 ```
 
-```{r url}
+```{r url, echo = FALSE}
 issues <- issues %>%
-  mutate(url = str_glue("https://github.com/{owner}/{repo}/issues/{number}"))
+  mutate(url = str_glue("https://github.com/{owner}/{repo}/issues/{number}")) %>%
+  mutate(issue = str_glue('<a href = "{url}">{title}</a>'))
 ```
 
-
-
-```{r select-iss, include=FALSE}
+```{r select-iss, include = FALSE}
 issues_pared <- issues %>%
-  select(c("repo", "title", "comments", "bug", "reaction_p1", "reaction_other"))
+  select(c("repo", "issue", "reaction_p1", "reaction_other", "comments", "bug"))
 ```
 
 
-```{r dt, echo=FALSE}
-datatable(issues_pared, options = list(pageLength = 20)) %>%
+```{r dt, echo = FALSE}
+datatable(issues_pared, escape = FALSE, options = list(pageLength = 10)) %>%
   formatStyle('reaction_p1',  color = 'black', fontWeight = 'bold')
 ```
 
