@@ -14,11 +14,18 @@ suppressPackageStartupMessages(library(tidyverse))
 library(DT)
 ```
 
-```{r load_iss, include=FALSE}
-issues <- readRDS(here::here("data", "issues.Rds"))
+```{r load-iss, include=FALSE}
+load(here::here("data", "issues.RData"))
 ```
 
-```{r select_iss, include=FALSE}
+```{r url}
+issues <- issues %>%
+  mutate(url = str_glue("https://github.com/{owner}/{repo}/issues/{number}"))
+```
+
+
+
+```{r select-iss, include=FALSE}
 issues_pared <- issues %>%
   select(c("repo", "title", "comments", "bug", "reaction_p1", "reaction_other"))
 ```
