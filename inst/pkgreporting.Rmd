@@ -30,8 +30,8 @@ issues_pared <- issues %>%
 
 
 ```{r dt, echo = FALSE}
-datatable(issues_pared, escape = FALSE, options = list(pageLength = 10)) %>%
-  formatStyle('reaction_p1',  color = 'black', fontWeight = 'bold')
+datatable(issues_pared, filter = 'bottom', escape = FALSE, options = list(pageLength = 10)) %>%
+  formatStyle('reaction_p1', fontWeight = 'bold')
 ```
 
 
