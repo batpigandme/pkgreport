@@ -29,7 +29,7 @@ issues_pared <- issues %>%
 ```
 
 
-```{r dt, echo = FALSE}
+```{r dt, echo=FALSE}
 datatable(issues_pared, filter = 'bottom', escape = FALSE, options = list(pageLength = 10)) %>%
   formatStyle('reaction_p1', fontWeight = 'bold')
 ```
