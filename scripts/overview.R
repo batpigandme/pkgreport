@@ -5,7 +5,7 @@ load_all(here::here())
 # TODO: Include in test coverage
 # TODO: add CRAN package status
 
-orgs <- c("tidyverse", "r-lib", "r-dbi")
+orgs <- c("tidyverse", "r-lib", "r-dbi", "tidymodels")
 org_repos <- orgs %>%
   map_df(github_repos) %>%
   filter(is_pkg) %>%
