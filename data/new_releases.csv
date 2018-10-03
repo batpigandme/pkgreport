@@ -1,0 +1,15 @@
+owner,repo,watchers,downloads,revdep,revdep_hard,release,release_maj,release_1st,issues,bugs,features,unlabelled,prs,reaction_p1,reaction_other
+r-lib,usethis,286,8066,8,6,22,22,318,82,1,35,44,3,36,2
+tidymodels,infer,250,1197,2,2,30,56,240,14,1,0,4,1,1,0
+r-lib,rlang,175,435402,278,270,20,197,487,119,0,0,4,9,6,0
+r-lib,fs,158,9971,12,9,13,176,229,9,2,7,1,1,3,0
+r-lib,scales,129,325034,1300,964,27,27,2540,16,4,8,4,8,32,0
+r-lib,scales,129,325034,1300,964,27,27,2540,16,4,8,4,8,32,0
+r-lib,scales,129,325034,1300,964,27,27,2540,16,4,8,4,8,32,0
+r-lib,scales,129,325034,1300,964,27,27,2540,16,4,8,4,8,32,0
+r-lib,processx,110,132826,10,7,20,20,463,10,0,0,10,1,0,0
+r-lib,callr,102,100512,23,14,12,12,809,5,0,0,5,0,1,0
+r-lib,later,54,148948,8,6,5,305,437,17,0,0,17,2,1,0
+r-lib,ps,28,87388,2,1,26,26,45,8,0,0,8,0,0,0
+r-lib,pkgconfig,26,263508,5,5,20,1145,1150,NA,NA,NA,NA,NA,NA,NA
+tidymodels,dials,11,321,NA,NA,23,NA,23,2,0,0,2,0,0,0
