@@ -80,3 +80,24 @@ github_rate_limit <- function() {
   rate$reset <- .POSIXct(rate$reset, tz = "")
   rate
 }
+
+# github contributors -----------------------------------------------------
+github_contributors <- function(username, repo) {
+  contrib_json <- gh::gh(
+    "GET /repos/:owner/:repo/contributors",
+    owner = username,
+    repo = repo,
+    .limit = Inf
+  )
+
+  if (identical(contrib_json[[1]], ""))
+    return(tibble::tibble())
+
+  tibble::tibble(
+    owner = username,
+    repo = repo,
+    contributor = contrib_json %>% map_chr("login")
+  )
+
+}
+
