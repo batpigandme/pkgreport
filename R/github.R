@@ -96,7 +96,8 @@ github_contributors <- function(username, repo) {
   tibble::tibble(
     owner = username,
     repo = repo,
-    contributor = contrib_json %>% map_chr("login")
+    contributor = contrib_json %>% map_chr("login"),
+    commits = contrib_json %>% map_int("contributions")
   )
 
 }
