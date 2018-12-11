@@ -1,0 +1,12 @@
+name: annual_report
+title: annual_report
+username: mara
+account: mara
+server: connect.rstudioservices.com
+hostUrl: https://connect.rstudioservices.com/__api__
+appId: 195
+bundleId: 1131
+url: https://connect.rstudioservices.com/mara/annual_report/
+when: 1544534323.97815
+asMultiple: FALSE
+asStatic: TRUE

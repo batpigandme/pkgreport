@@ -1,0 +1,47 @@
+---
+title: "annual report"
+date: "12/11/2018"
+output: 
+  html_document:
+    df_print: paged
+    keep_md: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+suppressPackageStartupMessages(library(tidyverse))
+load(here::here("data", "overview.RData"))
+```
+
+```{r}
+repos <- repos %>%
+  unique()
+
+first_releases <- repos %>%
+  filter(release_1st < 350) %>%
+  arrange(release_1st)
+
+first_releases
+```
+
+```{r}
+major_releases <- repos %>%
+  filter(release_maj < 350) %>%
+  arrange(release_maj)
+
+major_releases
+```
+
+```{r}
+releases <- repos %>%
+  filter(release < 350) %>%
+  arrange(release)
+
+releases
+```
+
+
+
