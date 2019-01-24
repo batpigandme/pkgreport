@@ -31,6 +31,7 @@ github_repo <- function(name) {
 }
 
 
+# github_isssues ----------------------------------------------------------
 github_issues <- function(username, repo) {
   issues_json <- gh::gh(
     "GET /repos/:owner/:repo/issues",

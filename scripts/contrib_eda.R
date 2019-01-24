@@ -3,7 +3,7 @@ library(lubridate)
 load_all(here::here())
 library(usethis)
 library(purrr)
-
+library(glue)
 
 # pluck_chr helper --------------------------------------------------------
 
@@ -11,11 +11,69 @@ library(purrr)
 ## mimimalist, type-specific purrr::pluck()'s
 pluck_chr <- function(l, what) vapply(l, `[[`, character(1), what)
 
+
+# indent from usethis utils -----------------------------------------------
+
+indent <- function(x, first = "  ", indent = first) {
+  x <- gsub("\n", paste0("\n", indent), x)
+  paste0(first, x)
+}
+
+# ui todo from usethis ----------------------------------------------------
+
+#' @rdname ui
+#' @export
+ui_todo <- function(x, .envir = parent.frame()) {
+  x <- glue_collapse(x, "\n")
+  x <- glue(x, .envir = .envir)
+  cat_bullet(x, crayon::red(clisymbols::symbol$bullet))
+}
+
+
+# ui codeblock from usethis -----------------------------------------------
+
+#' @param copy If `TRUE`, the session is interactive, and the clipr package
+#'   is installed, will copy the code block to the clipboard.
+#' @rdname ui
+#' @export
+ui_code_block <- function(x, copy = interactive(), .envir = parent.frame()) {
+  x <- glue_collapse(x, "\n")
+  x <- glue(x, .envir = .envir)
+
+  block <- indent(x, "  ")
+  block <- crayon::make_style("darkgrey")(block)
+  cat_line(block)
+
+  if (copy && clipr::clipr_available()) {
+    x <- crayon::strip_style(x)
+    clipr::write_clip(x)
+    cat_line("  [Copied to clipboard]")
+  }
+}
+
+# Cat wrappers from usethis --------------------------------------------------
+
+cat_bullet <- function(x, bullet) {
+  bullet <- paste0(bullet, " ")
+  x <- indent(x, bullet, "  ")
+  cat_line(x)
+}
+
+# All UI output must eventually go through cat_line() so that it
+# can be quieted with 'usethis.quiet' when needed.
+cat_line <- function(..., quiet = getOption("usethis.quiet", default = FALSE)) {
+  if (quiet)
+    return(invisible())
+
+  lines <- paste0(..., "\n")
+  cat(lines, sep = "")
+}
+
 # get 2018 prs ------------------------------------------------------------
 get_2018_pulls <- function(owner, repo,
                            from = "2018-01-01T00:00:00Z") {
   res <- gh::gh(
-    glue::glue("/repos/{owner}/{repo}/issues"),
+    "/repos/:owner/:repo/issues",
     owner = owner, repo = repo,
     since = as.POSIXct(from),
     state = "all",
@@ -23,6 +81,10 @@ get_2018_pulls <- function(owner, repo,
     .limit = Inf
   )
 
+  if (identical(res[[1]], "")) {
+    ui_line("No matching issues/PRs found.")
+    return(invisible())
+  }
 
   ## from: https://github.com/r-lib/usethis/blob/master/R/tidyverse.R#L333
   creation_time <- function(x) {
@@ -56,7 +118,17 @@ repos <- org_repos
 
 contributors <- map2_df(repos$owner, repos$repo, github_contributors)
 
+# get 2018 contributors ---------------------------------------------------
+
 contrib_pr_2018 <- map2_df(repos$owner, repos$repo, get_2018_pulls)
+write_csv(contrib_pr_2018, here::here("data", "contrib_pr_2018.csv"))
+
+prs_2018 <- sort(unique(contrib_pr_2018$contributor))
+contrib_link <- glue("[&#x0040;{prs_2018}](https://github.com/{prs_2018})")
+ui_todo("{length(prs_2018)} contributors identified")
+ui_code_block(glue_collapse(contrib_link, sep = ", ", last = ", and "))
+
+# contributor eda ---------------------------------------------------------
 
 only_contribs <- contributors %>%
   select(contributor)
@@ -104,7 +176,6 @@ ggplot(tot_contrib_commits, aes(tot_commits)) +
 
 write_csv(contributors, here::here("data", "contribs_by_repo.csv"))
 write_csv(tot_contrib_commits, here::here("data", "tot_contrib_commits.csv"))
-write_csv(count_commit_num, here::here("data", "count_commit_num.csv"))
 
 
 
@@ -127,4 +198,4 @@ res <- gh::gh(
 
 
 dplyr_contribs_2018 <- get_2018_pulls(owner = "tidyverse", repo = "dplyr")
-
+write_csv(count_commit_num, here::here("data", "count_commit_num.csv"))
