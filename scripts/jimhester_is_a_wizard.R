@@ -46,3 +46,27 @@ issues_df <- issues %>%
 
 
 
+
+# events function ---------------------------------------------------------
+
+gh_events <- function(.x) {
+  events_json <- gh::gh("/repos/:owner/:repo/issues/:number/timeline", owner = .x$repository$owner$login, repo = .x$repository$name, number = .x$number, .send_headers = c(Accept = "application/vnd.github.mockingbird-preview")) %>%
+    keep(~ .x$event == "cross-referenced")
+}
+gh_events2 <- function(.x) {
+  gh::gh("/repos/:owner/:repo/issues/:number/timeline", owner = owner, repo = repo, number = issue_num, .send_headers = c(Accept = "application/vnd.github.mockingbird-preview")) %>%
+    keep(~ .x$event == "cross-referenced")
+}
+
+gh_events(issues)
+
+map(issues, gh::gh("/repos/:owner/:repo/issues/:number/timeline", owner = .x$repository$owner$login, repo = .x$repository$name, number = .x$number, .send_headers = c(Accept = "application/vnd.github.mockingbird-preview")) %>%
+        keep(~ .x$event == "cross-referenced"))
+
+
+# messy for loop fubar ----------------------------------------------------
+
+for(i in 1:length(issues)) {print(issues[[i]][["user"]][["login"]])}
+
+
+
