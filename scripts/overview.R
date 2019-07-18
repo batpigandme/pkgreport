@@ -1,6 +1,6 @@
 library(tidyverse)
 library(lubridate)
-load_all(here::here())
+devtools::load_all(here::here())
 
 # TODO: Include in test coverage
 # TODO: add CRAN package status
