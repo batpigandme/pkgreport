@@ -11,9 +11,9 @@ library(purrr)
 ## mimimalist, type-specific purrr::pluck()'s
 pluck_chr <- function(l, what) vapply(l, `[[`, character(1), what)
 
-# get 2018 prs ------------------------------------------------------------
-get_2018_pulls <- function(owner, repo,
-                           from = "2018-01-01T00:00:00Z") {
+# get 2019 prs ------------------------------------------------------------
+get_2019_pulls <- function(owner, repo,
+                           from = "2019-01-01T00:00:00Z") {
   res <- gh::gh(
     glue::glue("/repos/{owner}/{repo}/issues"),
     owner = owner, repo = repo,
@@ -56,7 +56,7 @@ repos <- org_repos
 
 contributors <- map2_df(repos$owner, repos$repo, github_contributors)
 
-contrib_pr_2018 <- map2_df(repos$owner, repos$repo, get_2018_pulls)
+contrib_pr_2019 <- map2_df(repos$owner, repos$repo, get_2019_pulls)
 
 only_contribs <- contributors %>%
   select(contributor)
@@ -71,7 +71,7 @@ contrib_json <- gh::gh(
   .limit = Inf
 )
 
-thx <- use_tidy_thanks("tidyverse/ggplot2", from = "2018-01-01")
+thx <- use_tidy_thanks("tidyverse/ggplot2", from = "2019-01-01")
 
 
 contrib_commits <- contributors %>%
@@ -126,5 +126,5 @@ res <- gh::gh(
 
 
 
-dplyr_contribs_2018 <- get_2018_pulls(owner = "tidyverse", repo = "dplyr")
+dplyr_contribs_2019 <- get_2019_pulls(owner = "tidyverse", repo = "dplyr")
 
