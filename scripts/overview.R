@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
 devtools::load_all(here::here())
+library(pkgsearch)
 
 # TODO: Include in test coverage
 # TODO: add CRAN package status
@@ -47,6 +48,14 @@ release_sum <- releases %>%
 
 repos <- repos %>% left_join(release_sum, by = c("repo" = "pkg"))
 
+# CRAN package history ----------------------------------------------------
+
+pkg_history <- repos$repo %>% map_df(pkgsearch::cran_package_history)
+
+pkg_history <- pkg_history %>%
+  select(-dependencies)
+
+write_csv(pkg_history, here::here("data", "pkg_history.csv"))
 # Issues ------------------------------------------------------------------
 
 issues <- map2_df(repos$owner, repos$repo, github_issues)
