@@ -46,6 +46,8 @@ release_sum <- releases %>%
     release_1st = first(age)
   )
 
+sum_pkgs <- release_sum$pkg
+
 repos <- repos %>% left_join(release_sum, by = c("repo" = "pkg"))
 
 # CRAN package history ----------------------------------------------------
@@ -63,9 +65,9 @@ write_csv(pkg_history, here::here("data", "pkg_history.csv"))
 pkg_history <- pkg_history %>%
   rename(date_publication = `Date/Publication`)
 
-
+# only keep packages that are in release sum
 pkg_history <- pkg_history %>%
-  filter(Package != "Design")
+  filter(Package %in% sum_pkgs)
 
 pkg_history <- pkg_history %>%
   mutate(date_publication = lubridate::as_date(date_publication))
