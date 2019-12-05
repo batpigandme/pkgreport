@@ -55,7 +55,8 @@ repos <- repos %>% left_join(release_sum, by = c("repo" = "pkg"))
 pkg_history <- repos$repo %>% map_df(pkgsearch::cran_package_history)
 
 pkg_history <- pkg_history %>%
-  select(-dependencies)
+  select(-dependencies) %>%
+  distinct()
 
 write_csv(pkg_history, here::here("data", "pkg_history.csv"))
 
@@ -74,9 +75,11 @@ pkg_history <- pkg_history %>%
 
 releases_2019 <- pkg_history %>%
   filter(date_publication >= as_date("2019-01-01")) %>%
-  distinct()
+  distinct() %>%
+  janitor::remove_empty("cols") %>%
+  janitor::clean_names()
 
 write_csv(releases_2019, here::here("data", "releases_2019.csv"))
 
 pkg_2019_release_count <- releases_2019 %>%
-  count(Package)
+  count(package)
