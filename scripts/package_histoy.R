@@ -50,6 +50,11 @@ sum_pkgs <- release_sum$pkg
 
 repos <- repos %>% left_join(release_sum, by = c("repo" = "pkg"))
 
+# released since Jan 1, 2019
+first_releases_2019 <- repos %>%
+  filter(release_1st <= (today() - as_date("2019-01-01")))
+
+write_csv(first_releases_2019, here::here("data", "first_releases_2019.csv"))
 # CRAN package history ----------------------------------------------------
 
 pkg_history <- repos$repo %>% map_df(pkgsearch::cran_package_history)
