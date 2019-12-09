@@ -1107,6 +1107,18 @@ interfaces ('CLIs'). Includes tools for drawing rules, boxes, trees, and
 'Unicode' symbols with 'ASCII' alternatives.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/cli#readme,https://github.com/r-lib/cli/issues,6.1.1,no,2019-03-19 09:55:47 UTC; gaborcsardi,"Gábor Csárdi [aut, cre],
 Hadley Wickham [ctb],
 Kirill Müller [ctb]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-03-19,2019-03-19 11:56:31,2019-03-19T09:43:26+00:00,cc16412dbe255fdd7beae222d2753132,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+cli,Helpers for Developing Command Line Interfaces,2.0.0,"c(
+person(""Gábor"", ""Csárdi"", , ""csardi.gabor@gmail.com"", c(""aut"", ""cre"")),
+person(""Hadley"", ""Wickham"", role = c(""ctb"")),
+person(""Kirill"", ""Müller"", role = c(""ctb""))
+)","A suite of tools to build attractive command line interfaces
+('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,
+etc. Supports custom themes via a 'CSS'-like language. It also contains a
+number of lower level 'CLI' elements: rules, boxes, trees, and
+'Unicode' symbols with 'ASCII' alternatives. It integrates with the
+'crayon' package to support 'ANSI' terminal colors.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/cli#readme,https://github.com/r-lib/cli/issues,7.0.2,no,2019-12-09 09:38:38 UTC; gaborcsardi,"Gábor Csárdi [aut, cre],
+Hadley Wickham [ctb],
+Kirill Müller [ctb]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-12-09,2019-12-09 11:14:23,2019-12-09T09:20:02+00:00,b0fecb844c4ca06b5d61e43fd1f37881,NA,cli,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 conf,Visualization and Analysis of Statistical Measures of Confidence,1.6.0,"c(person(""Christopher"", ""Weld"", role = c(""aut"", ""cre""), email = ""ceweld@email.wm.edu"", comment = c(ORCID = ""0000-0001-5902-9738"")),
 person(""Hayeon"", ""Park"", role = ""aut""),
 person(""Lawrence"", ""Leemis"", role = ""aut""),
@@ -3259,6 +3271,30 @@ RStudio [cph, fnd]",Jim Hester <jim.hester@rstudio.com>,CRAN,2019-11-28,2019-11-
 'RcppExports.R' 'Result.R' 'Table.R' 'Viewer.R' 'db.R'
 'hidden.R' 'utils.R' 'zzz.R'",NA,NA,NA,true,"C++11, GNU make, An ODBC3 driver manager and
 drivers.",NA,NA,NA,NA
+odbc,Connect to ODBC Compatible Databases (using the DBI Interface),1.2.1,"
+c(person(given = ""Jim"",
+family = ""Hester"",
+role = c(""aut"", ""cre""),
+email = ""jim.hester@rstudio.com""),
+person(given = ""Hadley"",
+family = ""Wickham"",
+role = ""aut"",
+email = ""hadley@rstudio.com""),
+person(given = ""lexicalunit"",
+role = ""cph"",
+comment = ""nanodbc library""),
+person(given = ""Google Inc."",
+role = ""cph"",
+comment = ""cctz library""),
+person(given = ""RStudio"",
+role = c(""cph"", ""fnd"")))",A DBI-compatible interface to ODBC databases.,MIT + file LICENSE,UTF-8,true,https://github.com/r-dbi/odbc,https://github.com/r-dbi/odbc/issues,7.0.2,yes,2019-12-05 16:45:00 UTC; jhester,"Jim Hester [aut, cre],
+Hadley Wickham [aut],
+lexicalunit [cph] (nanodbc library),
+Google Inc. [cph] (cctz library),
+RStudio [cph, fnd]",Jim Hester <jim.hester@rstudio.com>,CRAN,2019-12-05,2019-12-05 20:20:33,2019-12-05T17:00:02+00:00,7bafd0a2e1a41d6f1cd5657a619e436e,NA,NA,"'odbc.R' 'Driver.R' 'Connection.R' 'DataTypes.R'
+'RcppExports.R' 'Result.R' 'Table.R' 'Viewer.R' 'db.R'
+'hidden.R' 'utils.R' 'zzz.R'",NA,NA,NA,true,"C++11, GNU make, An ODBC3 driver manager and
+drivers.",NA,NA,NA,NA
 RMariaDB,Database Interface and 'MariaDB' Driver,1.0.7,"c(
 person(""Kirill"", ""M\u00fcller"", role = c(""aut"", ""cre""), email = ""krlmlr+r@mailbox.org"", comment = c(ORCID = ""0000-0002-1416-3412"")),
 person(""Jeroen"", ""Ooms"", role = ""aut"", comment = c(ORCID = ""0000-0002-4035-0289"")),
@@ -3336,6 +3372,26 @@ Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
 from RPostgreSQL)",Kirill Müller <krlmlr+r@mailbox.org>,CRAN,2019-12-03,2019-12-03 14:08:28,2019-12-03T11:22:03+00:00,1f3b7570f46e553b547c55d27afd0bbb,NA,NA,"'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
 'RcppExports.R' 'default.R' 'export.R' 'names.R' 'quote.R'
 'tables.R' 'transactions.R' 'utils.R'",NA,2018-05-05,true,NA,"libpq >= 9.0: libpq-dev (deb) or postgresql-devel
+(rpm)",NA,NA,NA,NA
+RPostgres,'Rcpp' Interface to 'PostgreSQL',1.1.3,"c(
+person(""Hadley"", ""Wickham"", role = ""aut""),
+person(""Jeroen"", ""Ooms"", role = ""aut""),
+person(""Kirill"", ""M\u00fcller"", role = c(""aut"", ""cre""), email = ""krlmlr+r@mailbox.org"", comment = c(ORCID = ""0000-0002-1416-3412"")),
+person(""RStudio"", role = ""cph""),
+person(""R Consortium"", role = ""fnd""),
+person(""Tomoaki"", ""Nishiyama"", role = ""ctb"",
+comment = ""Code for encoding vectors into strings derived from RPostgreSQL"")
+)","
+Fully 'DBI'-compliant 'Rcpp'-backed interface to 'PostgreSQL' <https://www.postgresql.org/>,
+an open-source relational database.",GPL-2,UTF-8,NA,https://github.com/r-dbi/RPostgres,https://github.com/r-dbi/RPostgres/issues,6.0.1.9000,yes,2019-12-07 12:01:35 UTC; kirill,"Hadley Wickham [aut],
+Jeroen Ooms [aut],
+Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+RStudio [cph],
+R Consortium [fnd],
+Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
+from RPostgreSQL)",Kirill Müller <krlmlr+r@mailbox.org>,CRAN,2019-12-07,2019-12-07 17:32:25,2019-12-07T14:40:02+00:00,aad4e2adef12db07b6ee0e54b1903813,NA,NA,"'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
+'RcppExports.R' 'default.R' 'export.R' 'names.R' 'quote.R'
+'tables.R' 'transactions.R' 'utils.R'",NA,2019-12-05,true,NA,"libpq >= 9.0: libpq-dev (deb) or postgresql-devel
 (rpm)",NA,NA,NA,NA
 RSQLite,'SQLite' Interface for R,2.1.2,"c(
 person(""Kirill"", ""M\u00fcller"", role = c(""aut"", ""cre""), email = ""krlmlr+r@mailbox.org"", comment = c(ORCID = ""0000-0002-1416-3412"")),
@@ -3723,6 +3779,10 @@ Neal Fultz [ctb],
 Doug Friedman [ctb],
 Richie Cotton [ctb],
 Brian Fannin [ctb]",Andrew Bray <abray@reed.edu>,CRAN,2019-11-19,2019-11-19 12:14:25,2019-11-19T09:30:02+00:00,94daafe3e16c4e467482178d4537d7fc,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+modeldata,Data Sets Used Useful for Modeling Packages,0.0.1,"c(
+person(given = ""Max"", family = ""Kuhn"", email = ""max@rstudio.com"", role = c(""aut"", ""cre"")),
+person(""RStudio"", role = ""cph""))",Data sets used for demonstrating or testing model-related packages are contained in this package.,MIT + file LICENSE,UTF-8,false,https://github.com/tidymodels/modeldata,NA,7.0.1.9000,no,2019-11-29 20:50:24 UTC; maxkuhn,"Max Kuhn [aut, cre],
+RStudio [cph]",Max Kuhn <max@rstudio.com>,CRAN,2019-12-06,2019-12-06 22:50:25,2019-12-06T20:20:06+00:00,a29d6311baf6424f5b194bfa9fd6a278,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 modeldb,Fits Models Inside the Database,0.1.1,"
 person(""Edgar"", ""Ruiz"", email = ""edgar@rstudio.com"", role = c(""aut"", ""cre""))",Uses 'dplyr' and 'tidyeval' to fit statistical models inside the database. It currently supports KMeans and linear regression models.,GPL-3,NA,NA,https://github.com/edgararuiz/modeldb,https://github.com/edgararuiz/modeldb/issues,6.1.1,no,2019-01-06 02:18:26 UTC; edgar,"Edgar Ruiz [aut, cre]",Edgar Ruiz <edgar@rstudio.com>,CRAN,2019-01-07,2019-01-07 16:32:36,2019-01-07T15:30:11+00:00,99de41bcf0eeadcd15531dc5f71a1a1b,NA,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 modeldb,Fits Models Inside the Database,0.1.2,"

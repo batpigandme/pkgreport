@@ -2749,41 +2749,10 @@ RStudio [cph]",Kirill Müller <krlmlr+r@mailbox.org>,CRAN,2019-06-06 13:40:03 UT
 'repair-names.R' 'rownames.R' 'strrep.R' 'subsetting.R'
 'tbl-df.r' 'tibble-package.R' 'tibble.R' 'type-sum.r'
 'utils-format.r' 'utils.r' 'view.R' 'wrap.R' 'zzz.R'",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-tidygenomics,Tidy Verbs for Dealing with Genomic Data Frames,0.1.0,"c(person(""Constantin"", ""Ahlmann-Eltze"", email = ""artjom31415@googlemail.com"", role = c(""aut"", ""cre"")),
-person(""Stan Developers"", role=""cph"",
-comment=""Code from the Stan Math library is reused in 'cluster_interval.cpp'""),
-person(""David"", ""Robinson"", role=""cph"",
-comment=""Code from the fuzzyjoin package is reused""))","Handle genomic data within data frames just as you would with 'GRanges'.
-This packages provides method to deal with genomic intervals the ""tidy-way"" which makes
-it simpler to integrate in the the general data munging process. The API is inspired by the
-popular 'bedtools' and the genome_join() method from the 'fuzzyjoin' package.",GPL-3,UTF-8,true,https://github.com/const-ae/tidygenomics,NA,6.0.1,yes,2017-06-25 18:05:17 UTC; constantin,"Constantin Ahlmann-Eltze [aut, cre],
-Stan Developers [cph] (Code from the Stan Math library is reused in
-'cluster_interval.cpp'),
-David Robinson [cph] (Code from the fuzzyjoin package is reused)",Constantin Ahlmann-Eltze <artjom31415@googlemail.com>,CRAN,2017-06-25 22:45:04 UTC,2017-06-25 22:47:53,2017-06-25T21:45:04+00:00,ca807bd0be1fa5085eceacd05da22104,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-tidygenomics,Tidy Verbs for Dealing with Genomic Data Frames,0.1.1,"c(person(""Constantin"", ""Ahlmann-Eltze"", email = ""artjom31415@googlemail.com"", role = c(""aut"", ""cre"")),
-person(""Stan Developers"", role=""cph"",
-comment=""Code from the Stan Math library is reused in 'cluster_interval.cpp'""),
-person(""David"", ""Robinson"", role=""cph"",
-comment=""Code from the fuzzyjoin package is reused""))","Handle genomic data within data frames just as you would with 'GRanges'.
-This packages provides method to deal with genomic intervals the ""tidy-way"" which makes
-it simpler to integrate in the the general data munging process. The API is inspired by the
-popular 'bedtools' and the genome_join() method from the 'fuzzyjoin' package.",GPL-3,UTF-8,true,https://github.com/const-ae/tidygenomics,NA,6.1.1,yes,2019-05-27 09:15:19 UTC; constantin,"Constantin Ahlmann-Eltze [aut, cre],
-Stan Developers [cph] (Code from the Stan Math library is reused in
-'cluster_interval.cpp'),
-David Robinson [cph] (Code from the fuzzyjoin package is reused)",Constantin Ahlmann-Eltze <artjom31415@googlemail.com>,CRAN,2019-05-27 09:30:03 UTC,2019-05-27 11:32:27,2019-05-27T08:30:03+00:00,e78999de637bcff36cfaed9499448a3c,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-tidygenomics,Tidy Verbs for Dealing with Genomic Data Frames,0.1.2,"c(person(""Constantin"", ""Ahlmann-Eltze"", email = ""artjom31415@googlemail.com"", role = c(""aut"", ""cre""),
-comment = c(ORCID = ""0000-0002-3762-068X"")),
-person(""Stan Developers"", role=""cph"",
-comment=""Code from the Stan Math library is reused in 'cluster_interval.cpp'""),
-person(""David"", ""Robinson"", role=""cph"",
-comment=""Code from the fuzzyjoin package is reused""))","Handle genomic data within data frames just as you would with 'GRanges'.
-This packages provides method to deal with genomic intervals the ""tidy-way"" which makes
-it simpler to integrate in the the general data munging process. The API is inspired by the
-popular 'bedtools' and the genome_join() method from the 'fuzzyjoin' package.",GPL-3,UTF-8,true,https://github.com/const-ae/tidygenomics,NA,6.1.1,yes,2019-08-08 11:42:50 UTC; ahlmanne,"Constantin Ahlmann-Eltze [aut, cre]
-(<https://orcid.org/0000-0002-3762-068X>),
-Stan Developers [cph] (Code from the Stan Math library is reused in
-'cluster_interval.cpp'),
-David Robinson [cph] (Code from the fuzzyjoin package is reused)",Constantin Ahlmann-Eltze <artjom31415@googlemail.com>,CRAN,2019-08-08 11:50:02 UTC,2019-08-08 14:14:24,2019-08-08T10:50:02+00:00,fa1b7224b21714f33531a777cf9a6dcb,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+tidygapminder,Easily Tidy Gapminder Datasets,0.1.0,"person(""Anicet"", ""Ebou"", ,""anicet.ebou@gmail.com"",
+role = c(""aut"", ""cre""), comment = c(ORCID = ""0000-0003-4005-177X""))","A toolset that allows you to easily import and tidy data sheets retrieved
+from Gapminder data web tools. It will therefore contribute to reduce the time
+used in data cleaning of Gapminder indicator data sheets as they are very messy.",GPL-2,UTF-8,true,https://ebedthan.github.io/tidygapminder,https://github.com/ebedthan/tidygapminder/issues,7.0.0,no,2019-12-02 14:02:05 UTC; ediman,"Anicet Ebou [aut, cre] (<https://orcid.org/0000-0003-4005-177X>)",Anicet Ebou <anicet.ebou@gmail.com>,CRAN,2019-12-06 10:30:02 UTC,2019-12-06 12:38:28,2019-12-06T09:30:02+00:00,135a941860ea9932aebacaec4a3e699f,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 tidyr,Easily tidy data with spread and gather functions.,0.1,"'Hadley Wickham <h.wickham@gmail.com> [aut,cre]'",tidyr is an evolution of reshape2. It's design specifically for<U+000a>data tidying (not general reshaping or aggregating) and works well with<U+000a>dplyr data pipelines.,MIT + file LICENSE,NA,true,https://github.com/hadley/tidyr,NA,NA,no,2014-07-21 19:17:00 UTC; hadley,"'Hadley Wickham' [aut, cre]",'Hadley Wickham' <h.wickham@gmail.com>,CRAN,2014-07-21 23:16:05,2014-07-21 17:16:06,2014-07-21T23:16:05+00:00,NA,NA,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 tidyr,Easily Tidy Data with spread() and gather() Functions.,0.2.0,"as.person(c(<U+000a>""Hadley Wickham <hadley@rstudio.com> [aut, cre]"",<U+000a>""RStudio [cph]""<U+000a>))",An evolution of reshape2. It's designed specifically for data<U+000a>tidying (not general reshaping or aggregating) and works well with<U+000a>dplyr data pipelines.,MIT + file LICENSE,NA,true,https://github.com/hadley/tidyr,https://github.com/hadley/tidyr/issues,NA,no,2014-12-05 16:52:20 UTC; hadley,"Hadley Wickham [aut, cre],<U+000a>RStudio [cph]",Hadley Wickham <hadley@rstudio.com>,CRAN,2014-12-05 18:03:26,2014-12-05 12:04:27,2014-12-05T18:03:26+00:00,NA,NA,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 tidyr,Easily Tidy Data with `spread()` and `gather()` Functions,0.3.0,"c(<U+000a>person(""Hadley"", ""Wickham"", , ""hadley@rstudio.com"", c(""aut"", ""cre"")),<U+000a>person(""RStudio"", role = ""cph"")<U+000a>)",An evolution of 'reshape2'. It's designed specifically for data<U+000a>tidying (not general reshaping or aggregating) and works well with<U+000a>'dplyr' data pipelines.,MIT + file LICENSE,NA,true,https://github.com/hadley/tidyr,https://github.com/hadley/tidyr/issues,NA,yes,2015-09-07 22:33:26 UTC; hadley,"Hadley Wickham [aut, cre],<U+000a>RStudio [cph]",Hadley Wickham <hadley@rstudio.com>,CRAN,2015-09-08 08:08:44,2015-09-08 02:10:35,2015-09-08T08:08:44+00:00,NA,NA,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -3474,6 +3443,18 @@ interfaces ('CLIs'). Includes tools for drawing rules, boxes, trees, and
 'Unicode' symbols with 'ASCII' alternatives.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/cli#readme,https://github.com/r-lib/cli/issues,6.1.1,no,2019-03-19 09:55:47 UTC; gaborcsardi,"Gábor Csárdi [aut, cre],
 Hadley Wickham [ctb],
 Kirill Müller [ctb]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-03-19 10:43:26 UTC,2019-03-19 11:56:31,2019-03-19T09:43:26+00:00,cc16412dbe255fdd7beae222d2753132,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+cli,Helpers for Developing Command Line Interfaces,2.0.0,"c(
+person(""Gábor"", ""Csárdi"", , ""csardi.gabor@gmail.com"", c(""aut"", ""cre"")),
+person(""Hadley"", ""Wickham"", role = c(""ctb"")),
+person(""Kirill"", ""Müller"", role = c(""ctb""))
+)","A suite of tools to build attractive command line interfaces
+('CLIs'), from semantic elements: headings, lists, alerts, paragraphs,
+etc. Supports custom themes via a 'CSS'-like language. It also contains a
+number of lower level 'CLI' elements: rules, boxes, trees, and
+'Unicode' symbols with 'ASCII' alternatives. It integrates with the
+'crayon' package to support 'ANSI' terminal colors.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/cli#readme,https://github.com/r-lib/cli/issues,7.0.2,no,2019-12-09 09:38:38 UTC; gaborcsardi,"Gábor Csárdi [aut, cre],
+Hadley Wickham [ctb],
+Kirill Müller [ctb]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-12-09 10:20:02 UTC,2019-12-09 11:14:23,2019-12-09T09:20:02+00:00,b0fecb844c4ca06b5d61e43fd1f37881,NA,cli,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 cliapp,Create Rich Command Line Applications,0.1.0,NA,"Create rich command line applications, with colors, headings,
 lists, alerts, progress bars, etc. It uses CSS for custom themes.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/cliapp#readme,https://github.com/r-lib/cliapp/issues,6.1.1,no,2018-12-05 09:41:39 UTC; gaborcsardi,Gábor Csárdi,Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2018-12-16 14:40:05 UTC,2018-12-16 14:44:29,2018-12-16T13:40:05+00:00,c4354b626f51421cb1f1f489c40db117,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 clisymbols,Unicode Symbols at the R Prompt,1.0.0,"c(
@@ -9129,6 +9110,30 @@ RStudio [cph, fnd]",Jim Hester <jim.hester@rstudio.com>,CRAN,2019-11-28 05:40:09
 'RcppExports.R' 'Result.R' 'Table.R' 'Viewer.R' 'db.R'
 'hidden.R' 'utils.R' 'zzz.R'",NA,NA,NA,NA,NA,NA,true,"C++11, GNU make, An ODBC3 driver manager and
 drivers.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+odbc,Connect to ODBC Compatible Databases (using the DBI Interface),1.2.1,"
+c(person(given = ""Jim"",
+family = ""Hester"",
+role = c(""aut"", ""cre""),
+email = ""jim.hester@rstudio.com""),
+person(given = ""Hadley"",
+family = ""Wickham"",
+role = ""aut"",
+email = ""hadley@rstudio.com""),
+person(given = ""lexicalunit"",
+role = ""cph"",
+comment = ""nanodbc library""),
+person(given = ""Google Inc."",
+role = ""cph"",
+comment = ""cctz library""),
+person(given = ""RStudio"",
+role = c(""cph"", ""fnd"")))",A DBI-compatible interface to ODBC databases.,MIT + file LICENSE,UTF-8,true,https://github.com/r-dbi/odbc,https://github.com/r-dbi/odbc/issues,7.0.2,yes,2019-12-05 16:45:00 UTC; jhester,"Jim Hester [aut, cre],
+Hadley Wickham [aut],
+lexicalunit [cph] (nanodbc library),
+Google Inc. [cph] (cctz library),
+RStudio [cph, fnd]",Jim Hester <jim.hester@rstudio.com>,CRAN,2019-12-05 18:00:02 UTC,2019-12-05 20:20:33,2019-12-05T17:00:02+00:00,7bafd0a2e1a41d6f1cd5657a619e436e,NA,NA,"'odbc.R' 'Driver.R' 'Connection.R' 'DataTypes.R'
+'RcppExports.R' 'Result.R' 'Table.R' 'Viewer.R' 'db.R'
+'hidden.R' 'utils.R' 'zzz.R'",NA,NA,NA,NA,NA,NA,true,"C++11, GNU make, An ODBC3 driver manager and
+drivers.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 rkdb,R Client for 'kdb+',0.9.0,"c(
 person(""Sergey"",""Vidyuk"",      role=c(""aut"",""cre""), email=""svidyuk@gmail.com""),
 person(""Chris"",""Burke"", role=c(""ctb"")),
@@ -9545,6 +9550,26 @@ Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
 from RPostgreSQL)",Kirill Müller <krlmlr+r@mailbox.org>,CRAN,2019-12-03 12:22:03 UTC,2019-12-03 14:08:28,2019-12-03T11:22:03+00:00,1f3b7570f46e553b547c55d27afd0bbb,NA,NA,"'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
 'RcppExports.R' 'default.R' 'export.R' 'names.R' 'quote.R'
 'tables.R' 'transactions.R' 'utils.R'",NA,2018-05-05,true,NA,NA,NA,NA,"libpq >= 9.0: libpq-dev (deb) or postgresql-devel
+(rpm)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+RPostgres,'Rcpp' Interface to 'PostgreSQL',1.1.3,"c(
+person(""Hadley"", ""Wickham"", role = ""aut""),
+person(""Jeroen"", ""Ooms"", role = ""aut""),
+person(""Kirill"", ""M\u00fcller"", role = c(""aut"", ""cre""), email = ""krlmlr+r@mailbox.org"", comment = c(ORCID = ""0000-0002-1416-3412"")),
+person(""RStudio"", role = ""cph""),
+person(""R Consortium"", role = ""fnd""),
+person(""Tomoaki"", ""Nishiyama"", role = ""ctb"",
+comment = ""Code for encoding vectors into strings derived from RPostgreSQL"")
+)","
+Fully 'DBI'-compliant 'Rcpp'-backed interface to 'PostgreSQL' <https://www.postgresql.org/>,
+an open-source relational database.",GPL-2,UTF-8,NA,https://github.com/r-dbi/RPostgres,https://github.com/r-dbi/RPostgres/issues,6.0.1.9000,yes,2019-12-07 12:01:35 UTC; kirill,"Hadley Wickham [aut],
+Jeroen Ooms [aut],
+Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>),
+RStudio [cph],
+R Consortium [fnd],
+Tomoaki Nishiyama [ctb] (Code for encoding vectors into strings derived
+from RPostgreSQL)",Kirill Müller <krlmlr+r@mailbox.org>,CRAN,2019-12-07 15:40:02 UTC,2019-12-07 17:32:25,2019-12-07T14:40:02+00:00,aad4e2adef12db07b6ee0e54b1903813,NA,NA,"'PqDriver.R' 'PqConnection.R' 'PqResult.R' 'RPostgres-pkg.R'
+'RcppExports.R' 'default.R' 'export.R' 'names.R' 'quote.R'
+'tables.R' 'transactions.R' 'utils.R'",NA,2019-12-05,true,NA,NA,NA,NA,"libpq >= 9.0: libpq-dev (deb) or postgresql-devel
 (rpm)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 RSQLite,SQLite interface for R,0.2-1,NA,Database Interface R driver for SQLite<U+000a>This package embeds the SQLite database engine in R.,LGPL version 2 or newer,NA,NA,stat.bell-labs.com/stat/RS-DBI/index.html www.hwaci.com/sw/sqlite,NA,NA,NA,NA,David A. James <dj@research.bell-labs.com>,David A. James <dj@research.bell-labs.com>,NA,NA,2001-11-03 14:53:26,2001-10-29T00:00:00+00:00,NA,NA,NA,NA,NA,2001-10-29,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 RSQLite,SQLite interface for R,0.3-0,NA,Database Interface R driver for SQLite.<U+000a>This package embeds the SQLite database engine in R and<U+000a>provides an interface compliant with the DBI version 0.1-4.<U+000a>The source for the SQLite engine (version 2.7.1) is included here.,LGPL version 2 or newer,NA,NA,stat.bell-labs.com/stat/RS-DBI/index.html www.hwaci.com/sw/sqlite,NA,NA,NA,NA,David A. James <dj@research.bell-labs.com>,David A. James <dj@research.bell-labs.com>,NA,NA,2002-10-01 14:19:06,2002-09-05T00:00:00+00:00,NA,NA,NA,NA,NA,2002-09-05,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
@@ -10804,6 +10829,10 @@ Neal Fultz [ctb],
 Doug Friedman [ctb],
 Richie Cotton [ctb],
 Brian Fannin [ctb]",Andrew Bray <abray@reed.edu>,CRAN,2019-11-19 10:30:02 UTC,2019-11-19 12:14:25,2019-11-19T09:30:02+00:00,94daafe3e16c4e467482178d4537d7fc,Package,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+modeldata,Data Sets Used Useful for Modeling Packages,0.0.1,"c(
+person(given = ""Max"", family = ""Kuhn"", email = ""max@rstudio.com"", role = c(""aut"", ""cre"")),
+person(""RStudio"", role = ""cph""))",Data sets used for demonstrating or testing model-related packages are contained in this package.,MIT + file LICENSE,UTF-8,false,https://github.com/tidymodels/modeldata,NA,7.0.1.9000,no,2019-11-29 20:50:24 UTC; maxkuhn,"Max Kuhn [aut, cre],
+RStudio [cph]",Max Kuhn <max@rstudio.com>,CRAN,2019-12-06 21:20:06 UTC,2019-12-06 22:50:25,2019-12-06T20:20:06+00:00,a29d6311baf6424f5b194bfa9fd6a278,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 modeldb,Fits Models Inside the Database,0.1.0,"
 person(""Edgar"", ""Ruiz"", email = ""edgar@rstudio.com"", role = c(""aut"", ""cre""))",Uses 'dplyr' and 'tidyeval' to fit statistical models inside the database. It currently supports KMeans and linear regression models.,GPL-3,NA,NA,https://github.com/edgararuiz/modeldb,https://github.com/edgararuiz/modeldb/issues,6.0.1,no,2018-05-06 17:36:54 UTC; edgar,"Edgar Ruiz [aut, cre]",Edgar Ruiz <edgar@rstudio.com>,CRAN,2018-05-07 13:00:22 UTC,2018-05-07 13:02:20,2018-05-07T12:00:22+00:00,ae41a638665265173a6afe207e81522f,NA,knitr,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 modeldb,Fits Models Inside the Database,0.1.1,"
