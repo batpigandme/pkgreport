@@ -88,3 +88,13 @@ write_csv(releases_2019, here::here("data", "releases_2019.csv"))
 
 pkg_2019_release_count <- releases_2019 %>%
   count(package)
+
+# plot releases per week --------------------------------------------------
+releases_2019 %>%
+  mutate(release_week = lubridate::ymd(cut.Date(date_publication, breaks = "1 week"))) %>%
+  count(release_week) %>%
+  ggplot(aes(x = release_week, y = n)) +
+  geom_line() +
+  labs(title = "tidyverse / r-lib team CRAN releases per week, 2019",
+       x = "week",
+       y = "number of releases")

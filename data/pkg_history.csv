@@ -3395,6 +3395,18 @@ This packages does exactly that.",MIT + file LICENSE,UTF-8,true,https://github.c
 Winston Chang [aut],
 RStudio [cph, fnd],
 Mango Solutions [cph, fnd]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-09-22 09:50:02 UTC,2019-09-22 10:56:37,2019-09-22T08:50:02+00:00,b9241e4c8c3b90d40734161680543374,NA,knitr,NA,en-US,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+callr,Call R from R,3.4.0,"c(
+person(""Gábor"", ""Csárdi"", role = c(""aut"", ""cre"", ""cph""),
+email = ""csardi.gabor@gmail.com"",
+comment = c(ORCID = ""0000-0001-7098-9676"")),
+person(""Winston"", ""Chang"", role = ""aut""),
+person(""RStudio"", role = c(""cph"", ""fnd"")),
+person(""Mango Solutions"", role  = c(""cph"", ""fnd"")))","It is sometimes useful to perform a computation in a
+separate R process, without affecting the current R process at all.
+This packages does exactly that.",MIT + file LICENSE,UTF-8,true,https://github.com/r-lib/callr#readme,https://github.com/r-lib/callr/issues,7.0.2,no,2019-12-09 13:19:00 UTC; gaborcsardi,"Gábor Csárdi [aut, cre, cph] (<https://orcid.org/0000-0001-7098-9676>),
+Winston Chang [aut],
+RStudio [cph, fnd],
+Mango Solutions [cph, fnd]",Gábor Csárdi <csardi.gabor@gmail.com>,CRAN,2019-12-09 14:40:03 UTC,2019-12-09 15:56:25,2019-12-09T13:40:03+00:00,79f2f27f1aadaac158e30b82d486ecdc,NA,knitr,NA,en-US,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 carrier,Isolate Functions for Remote Execution,0.1.0,"c(
 person(""Lionel"", ""Henry"", ,""lionel@rstudio.com"", c(""aut"", ""cre"")),
 person(""RStudio"", role = ""cph"")
@@ -11419,6 +11431,17 @@ want to fit a model to each spatial location or time point in your study,
 summarise data by panels or collapse high-dimensional arrays to simpler
 summary statistics. The development of 'plyr' has been generously supported
 by 'Becton Dickinson'.",MIT + file LICENSE,NA,true,"http://had.co.nz/plyr, https://github.com/hadley/plyr",https://github.com/hadley/plyr/issues,5.0.1,yes,2016-06-07 19:58:36 UTC; hadley,"Hadley Wickham [aut, cre]",Hadley Wickham <hadley@rstudio.com>,CRAN,2016-06-08 10:40:15,2016-06-08 04:42:22,2016-06-08T10:40:15+00:00,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+plyr,"Tools for Splitting, Applying and Combining Data",1.8.5,"
+person(given = ""Hadley"",
+family = ""Wickham"",
+role = c(""aut"", ""cre""),
+email = ""hadley@rstudio.com"")","A set of tools that solves a common set of
+problems: you need to break a big problem down into manageable pieces,
+operate on each piece and then put all the pieces back together.  For
+example, you might want to fit a model to each spatial location or
+time point in your study, summarise data by panels or collapse
+high-dimensional arrays to simpler summary statistics. The development
+of 'plyr' has been generously supported by 'Becton Dickinson'.",MIT + file LICENSE,UTF-8,true,"http://had.co.nz/plyr, https://github.com/hadley/plyr",https://github.com/hadley/plyr/issues,7.0.2,yes,2019-12-09 22:21:13 UTC; hadley,"Hadley Wickham [aut, cre]",Hadley Wickham <hadley@rstudio.com>,CRAN,2019-12-10 11:30:12 UTC,2019-12-10 12:08:27,2019-12-10T10:30:12+00:00,f06cb24b1d0e87e914b94a2de0fccc60,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 bikedata,Download and Aggregate Data from Public Hire Bicycle Systems,0.0.1,"c(
 person(""Mark"", ""Padgham"", email = ""mark.padgham@email.com"", role = c(""aut"", ""cre"")),
 person(""Richard"", ""Ellison"", role = ""aut""),
