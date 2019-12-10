@@ -95,6 +95,6 @@ releases_2019 %>%
   count(release_week) %>%
   ggplot(aes(x = release_week, y = n)) +
   geom_line() +
-  labs(title = "tidyverse / r-lib team CRAN releases per week, 2019",
+  labs(title = "tidyverse / r-lib team CRAN releases per week",
        x = "week",
        y = "number of releases")
