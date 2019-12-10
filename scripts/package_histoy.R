@@ -84,10 +84,38 @@ releases_2019 <- pkg_history %>%
   janitor::remove_empty("cols") %>%
   janitor::clean_names()
 
+# add major/minor version info
+major_releases_2019 <- releases_2019 %>%
+  separate(version, c("major", "minor", "patch"), "\\.", fill = "right") %>%
+  replace_na(list(patch = 0)) %>%
+  mutate(release = case_when(
+    minor == 0 & patch == 0 ~ "major",
+    patch == 0 ~ "minor",
+    TRUE ~ "patch"
+  )) %>%
+  filter(release == "major")
+
 write_csv(releases_2019, here::here("data", "releases_2019.csv"))
 
 pkg_2019_release_count <- releases_2019 %>%
   count(package)
+
+
+# release week df ---------------------------------------------------------
+
+weeks_2019 <- tibble::tibble(week_num = 1:52)
+
+weeks_2019 <- weeks_2019 %>%
+  mutate(week_date = (lubridate::ymd("2018-12-31") + ((week_num - 1) * 7)))
+
+releases_per_week <- releases_2019 %>%
+  mutate(release_week = lubridate::ymd(cut.Date(date_publication, breaks = "1 week"))) %>%
+  count(release_week)
+
+releases_weeks_2019 <- weeks_2019 %>%
+  left_join(releases_per_week, by = c("week_date" = "release_week")) %>%
+  mutate(n = replace_na(n, 0))
+
 
 # plot releases per week --------------------------------------------------
 releases_2019 %>%
@@ -98,3 +126,13 @@ releases_2019 %>%
   labs(title = "tidyverse / r-lib team CRAN releases per week",
        x = "week",
        y = "number of releases")
+
+
+releases_weeks_2019 %>%
+  filter(week_date <= Sys.Date()) %>%
+  ggplot(aes(x = week_date, y = n)) +
+  geom_line() +
+  labs(title = "tidyverse / r-lib team CRAN releases per week",
+       x = "week",
+       y = "number of releases") +
+  hrbrthemes::theme_ipsum_rc()
