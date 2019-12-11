@@ -84,18 +84,18 @@ releases_2019 <- pkg_history %>%
   janitor::remove_empty("cols") %>%
   janitor::clean_names()
 
+write_csv(releases_2019, here::here("data", "releases_2019.csv"))
+
 # add major/minor version info
-major_releases_2019 <- releases_2019 %>%
-  separate(version, c("major", "minor", "patch"), "\\.", fill = "right") %>%
+major_minor_releases_2019 <- releases_2019 %>%
+  separate(version, c("major", "minor", "patch", "sub-patch"), "\\.", fill = "right") %>%
   replace_na(list(patch = 0)) %>%
   mutate(release = case_when(
     minor == 0 & patch == 0 ~ "major",
     patch == 0 ~ "minor",
     TRUE ~ "patch"
   )) %>%
-  filter(release == "major")
-
-write_csv(releases_2019, here::here("data", "releases_2019.csv"))
+  mutate(release_month = month(date_publication, label = TRUE, abbr = TRUE))
 
 pkg_2019_release_count <- releases_2019 %>%
   count(package)
@@ -103,11 +103,11 @@ pkg_2019_release_count <- releases_2019 %>%
 
 # release week df ---------------------------------------------------------
 
-weeks_2019 <- tibble::tibble(week_num = 1:52)
-
-weeks_2019 <- weeks_2019 %>%
+# make tibble of all weeks in 2019
+weeks_2019 <- tibble::tibble(week_num = 1:52) %>%
   mutate(week_date = (lubridate::ymd("2018-12-31") + ((week_num - 1) * 7)))
 
+# break 2019 releases into releases per week
 releases_per_week <- releases_2019 %>%
   mutate(release_week = lubridate::ymd(cut.Date(date_publication, breaks = "1 week"))) %>%
   count(release_week)
@@ -116,23 +116,49 @@ releases_weeks_2019 <- weeks_2019 %>%
   left_join(releases_per_week, by = c("week_date" = "release_week")) %>%
   mutate(n = replace_na(n, 0))
 
-
-# plot releases per week --------------------------------------------------
-releases_2019 %>%
-  mutate(release_week = lubridate::ymd(cut.Date(date_publication, breaks = "1 week"))) %>%
-  count(release_week) %>%
-  ggplot(aes(x = release_week, y = n)) +
-  geom_line() +
-  labs(title = "tidyverse / r-lib team CRAN releases per week",
-       x = "week",
-       y = "number of releases")
-
-
+# plot releases per week
 releases_weeks_2019 %>%
   filter(week_date <= Sys.Date()) %>%
   ggplot(aes(x = week_date, y = n)) +
   geom_line() +
   labs(title = "tidyverse / r-lib team CRAN releases per week",
        x = "week",
-       y = "number of releases") +
-  hrbrthemes::theme_ipsum_rc()
+       y = "releases") +
+  hrbrthemes::theme_ipsum_rc() +
+  theme(axis.title.y = element_text(angle = 0)) # unrotate y-axis lab
+
+# monthly releases --------------------------------------------------------
+releases_2019 %>%
+  mutate(release_month = lubridate::ymd(cut.Date(date_publication, breaks = "1 month"))) %>%
+  count(release_month) %>%
+  ggplot(aes(x = release_month, y = n)) +
+  geom_line() +
+  labs(title = "tidyverse / r-lib team monthly CRAN releases",
+       x = "month",
+       y = "releases") +
+  hrbrthemes::theme_ipsum_rc() +
+  theme(axis.title.y = element_text(angle = 0))
+
+
+monthly_release_type <- major_minor_releases_2019  %>%
+  group_by(release) %>%
+  count(release_month)
+
+
+# package releases by month and type --------------------------------------
+monthly_release_type %>%
+  group_by(release_month) %>%
+  ggplot(aes(x = release_month, y = n, fill = release)) +
+  geom_bar(position = "stack", stat = "identity") +
+  labs(title = "tidyverse / r-lib package releases by month and type",
+       x = "month 2019",
+       y = "count",
+       fill = "release type") +
+  hrbrthemes::theme_ipsum_rc() +
+  theme(axis.title.y = element_text(angle = 0))
+
+# total releases for each type
+monthly_release_type %>%
+  group_by(release) %>%
+  summarise(total = sum(n))
+
