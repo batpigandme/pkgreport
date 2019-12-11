@@ -139,8 +139,9 @@ releases_2019 %>%
   hrbrthemes::theme_ipsum_rc() +
   theme(axis.title.y = element_text(angle = 0))
 
-
+library(forcats)
 monthly_release_type <- major_minor_releases_2019  %>%
+  mutate(release = factor(release, levels = c("major", "minor", "patch"))) %>%
   group_by(release) %>%
   count(release_month)
 
@@ -148,8 +149,9 @@ monthly_release_type <- major_minor_releases_2019  %>%
 # package releases by month and type --------------------------------------
 monthly_release_type %>%
   group_by(release_month) %>%
-  ggplot(aes(x = release_month, y = n, fill = release)) +
-  geom_bar(position = "stack", stat = "identity") +
+  ggplot(aes(x = release_month, y = n, fill = fct_rev(release))) +
+  geom_bar(position = "stack", stat = "identity", colour = "grey50") +
+  scale_fill_brewer() +
   labs(title = "tidyverse / r-lib package releases by month and type",
        x = "month 2019",
        y = "count",
@@ -161,4 +163,8 @@ monthly_release_type %>%
 monthly_release_type %>%
   group_by(release) %>%
   summarise(total = sum(n))
+
+major_minor_releases_2019 %>%
+  ggplot(aes(x = lubridate::month(date_publication, label = TRUE, abbr = TRUE), fill = release)) +
+  geom_bar(position = "stack")
 
