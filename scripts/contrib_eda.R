@@ -56,6 +56,11 @@ repos <- org_repos
 
 contributors <- map2_df(repos$owner, repos$repo, github_contributors)
 
+repo_contributors <- contributors %>%
+  group_by(repo) %>%
+  add_tally() %>%
+  rename(repo_contributor_count = "n")
+
 contrib_pr_2019 <- map2_df(repos$owner, repos$repo, get_2019_pulls)
 
 only_contribs <- contributors %>%

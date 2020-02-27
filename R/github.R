@@ -90,8 +90,8 @@ github_contributors <- function(username, repo) {
     .limit = Inf
   )
 
-  if (identical(contrib_json[[1]], ""))
-    return(tibble::tibble())
+#  if (identical(contrib_json[[1]], ""))
+#    return(tibble::tibble())
 
   tibble::tibble(
     owner = username,
