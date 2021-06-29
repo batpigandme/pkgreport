@@ -111,3 +111,10 @@ write_csv(issues_no_labs, data_path("issues.csv"), na = "")
 
 save(repos, file = data_path("overview.RData"))
 save(issues, file = data_path("issues.RData"))
+
+
+# interactive -------------------------------------------------------------
+# library(googlesheets4)
+# # authenticate with googlesheets4
+# gs4_auth()
+# gs4_create("oss_pkgreport", sheets = list(pkg_overview = repos))
