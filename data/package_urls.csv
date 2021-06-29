@@ -1,0 +1,229 @@
+owner,repo,watchers,downloads,revdep,revdep_hard,release,release_maj,release_1st,cran_urls
+tidyverse,ggplot2,4972,1745088,3499,2485,4,481,5142,"https://ggplot2.tidyverse.org,
+https://github.com/tidyverse/ggplot2"
+tidyverse,dplyr,3769,1434633,2812,2234,10,396,2721,"https://dplyr.tidyverse.org, https://github.com/tidyverse/dplyr"
+r-lib,devtools,2079,896572,344,68,22,83,3660,"https://devtools.r-lib.org/, https://github.com/r-lib/devtools"
+topepo,caret,1343,155789,197,136,45,45,5016,https://github.com/topepo/caret/
+tidyverse,rvest,1269,546320,696,564,112,112,2412,"https://rvest.tidyverse.org/, https://github.com/tidyverse/rvest"
+tidymodels,broom,1141,794104,166,101,5,355,2410,"https://broom.tidymodels.org/, https://github.com/tidymodels/broom"
+tidyverse,tidyverse,1064,632136,163,64,75,586,1754,"https://tidyverse.tidyverse.org,
+https://github.com/tidyverse/tidyverse"
+tidyverse,tidyr,1022,881890,1266,993,118,405,2535,"https://tidyr.tidyverse.org, https://github.com/tidyverse/tidyr"
+tidyverse,purrr,973,655977,1054,943,438,884,2101,"http://purrr.tidyverse.org, https://github.com/tidyverse/purrr"
+r-lib,httr,903,763765,882,805,343,931,3341,"https://httr.r-lib.org/, https://github.com/r-lib/httr"
+jimhester,lintr,857,28392,88,5,496,637,2402,https://github.com/jimhester/lintr
+tidyverse,magrittr,848,997424,1685,1455,224,2411,2681,"https://magrittr.tidyverse.org,
+https://github.com/tidyverse/magrittr"
+tidyverse,readr,846,632237,480,374,267,267,2274,"https://readr.tidyverse.org, https://github.com/tidyverse/readr"
+r-lib,testthat,737,430443,5991,83,12,241,4242,"https://testthat.r-lib.org, https://github.com/r-lib/testthat"
+r-lib,usethis,627,240009,112,58,139,201,1346,"https://usethis.r-lib.org, https://github.com/r-lib/usethis"
+tidyverse,readxl,597,442329,199,141,839,865,2268,"https://readxl.tidyverse.org, https://github.com/tidyverse/readxl"
+tidyverse,reprex,592,482506,3,1,88,88,1631,"https://reprex.tidyverse.org,
+https://github.com/tidyverse/reprex#readme"
+tidymodels,infer,589,35312,3,2,167,641,1268,"https://github.com/tidymodels/infer, https://infer.tidymodels.org/"
+r-lib,pkgdown,560,844937,98,1,290,295,1153,"https://pkgdown.r-lib.org, https://github.com/r-lib/pkgdown"
+tidyverse,lubridate,557,797665,582,488,123,1339,3971,"https://lubridate.tidyverse.org,
+https://github.com/tidyverse/lubridate"
+tidyverse,glue,531,917764,394,354,306,452,1534,"https://github.com/tidyverse/glue, https://glue.tidyverse.org/"
+tidyverse,multidplyr,526,680,NA,NA,141,141,141,https://github.com/tidyverse/multidplyr
+tidymodels,corrr,507,6507,3,1,217,718,1817,"https://github.com/tidymodels/corrr, https://corrr.tidymodels.org"
+r-lib,vroom,495,20214,21,14,7,15,787,"https://vroom.r-lib.org, https://github.com/r-lib/vroom"
+tidyverse,dtplyr,489,496148,24,12,129,129,1828,https://github.com/tidyverse/dtplyr
+hadley,plyr,481,376979,795,701,483,3127,4655,"http://had.co.nz/plyr, https://github.com/hadley/plyr"
+r-lib,styler,480,51249,22,9,91,98,1296,"https://github.com/r-lib/styler, https://styler.r-lib.org"
+tidymodels,tidymodels,475,36801,12,0,71,499,1068,"https://tidymodels.tidymodels.org,
+https://github.com/tidymodels/tidymodels"
+r-lib,roxygen2,453,178600,1324,92,367,475,3629,"https://roxygen2.r-lib.org/, https://github.com/r-lib/roxygen2"
+tidyverse,forcats,450,586475,166,115,153,485,1765,"https://forcats.tidyverse.org,
+https://github.com/tidyverse/forcats"
+r-dbi,bigrquery,443,7303,4,3,267,417,2359,https://github.com/r-dbi/bigrquery
+tidyverse,tibble,423,1154021,1296,1105,44,124,1925,"https://tibble.tidyverse.org/, https://github.com/tidyverse/tibble"
+tidyverse,stringr,419,697688,1332,1205,870,870,4250,"http://stringr.tidyverse.org, https://github.com/tidyverse/stringr"
+tidymodels,parsnip,396,43108,37,22,33,446,960,"https://parsnip.tidymodels.org,
+https://github.com/tidymodels/parsnip"
+tidyverse,modelr,375,358026,13,6,406,1763,1763,"https://modelr.tidyverse.org, https://github.com/tidyverse/modelr"
+tidymodels,recipes,366,140701,172,92,74,1433,1433,"https://github.com/tidymodels/recipes,
+https://recipes.tidymodels.org"
+r-lib,progress,364,350591,178,146,775,1111,2222,https://github.com/r-lib/progress#readme
+tidyverse,haven,336,499123,89,63,67,76,2312,"https://haven.tidyverse.org, https://github.com/tidyverse/haven,
+https://github.com/WizardMac/ReadStat"
+r-lib,cli,336,1045394,195,175,64,64,1332,https://github.com/r-lib/cli#readme
+r-lib,pak,336,2891,2,0,221,NA,861,https://pak.r-lib.org/
+r-lib,rlang,325,1703086,1261,1207,59,735,1515,"https://rlang.r-lib.org, https://github.com/r-lib/rlang"
+r-lib,R6,315,602784,376,356,244,244,2539,"https://r6.r-lib.org, https://github.com/r-lib/R6/"
+tidyverse,dbplyr,298,533420,61,28,84,146,1481,"https://dbplyr.tidyverse.org/, https://github.com/tidyverse/dbplyr"
+r-dbi,odbc,295,71807,20,8,87,245,1605,"https://github.com/r-dbi/odbc, https://db.rstudio.com"
+r-lib,here,291,41978,56,21,198,226,1493,"https://here.r-lib.org/, https://github.com/r-lib/here"
+r-lib,covr,290,148586,1685,8,286,480,2232,"https://covr.r-lib.org, https://github.com/r-lib/covr"
+r-lib,fs,289,426910,121,94,333,333,1257,"http://fs.r-lib.org, https://github.com/r-lib/fs"
+r-lib,scales,270,507380,2464,1804,413,589,3568,"https://scales.r-lib.org, https://github.com/r-lib/scales"
+tidymodels,yardstick,268,44939,80,52,93,NA,1325,"https://github.com/tidymodels/yardstick,
+https://yardstick.tidymodels.org"
+r-lib,memoise,265,242494,87,79,154,154,3952,https://github.com/r-lib/memoise
+r-lib,crayon,257,891765,284,222,141,150,2471,https://github.com/r-lib/crayon#readme
+r-dbi,RPostgres,256,30914,17,5,78,173,1301,"https://rpostgres.r-dbi.org, https://github.com/r-dbi/RPostgres"
+r-lib,lobstr,254,16152,4,1,727,741,968,https://github.com/r-lib/lobstr
+tidymodels,rsample,253,70203,116,80,52,52,1452,"https://rsample.tidymodels.org,
+https://github.com/tidymodels/rsample"
+tidyverse,googlesheets4,250,495833,4,3,117,117,603,https://github.com/tidyverse/googlesheets4
+r-dbi,RSQLite,244,109234,164,83,68,539,7178,"https://rsqlite.r-dbi.org, https://github.com/r-dbi/RSQLite"
+r-lib,remotes,234,409448,55,23,27,27,1754,"https://remotes.r-lib.org, https://github.com/r-lib/remotes#readme"
+tidymodels,tidypredict,233,2256,2,2,244,718,1259,"https://tidypredict.tidymodels.org,
+https://github.com/tidymodels/tidypredict"
+r-dbi,DBI,224,356473,220,166,165,562,7132,"https://dbi.r-dbi.org, https://github.com/r-dbi/DBI"
+tidyverse,googledrive,220,499974,9,3,420,680,1401,"https://googledrive.tidyverse.org,
+https://github.com/tidyverse/googledrive"
+r-lib,zeallot,216,63457,15,10,1248,1248,1614,https://github.com/nteetor/zeallot
+r-lib,vctrs,210,1472815,135,109,61,413,943,https://vctrs.r-lib.org/
+r-lib,gmailr,209,10501,12,4,676,676,2530,https://github.com/r-lib/gmailr
+r-lib,callr,208,801747,75,39,70,70,1837,"https://callr.r-lib.org, https://github.com/r-lib/callr#readme"
+jennybc,gapminder,205,23822,23,3,1337,1337,2296,"https://github.com/jennybc/gapminder,
+http://www.gapminder.org/data/,
+https://doi.org/10.5281/zenodo.594018"
+tidymodels,stacks,203,586,NA,NA,70,70,218,"https://stacks.tidymodels.org/,
+https://github.com/tidymodels/stacks"
+jimhester,lookup,200,700,NA,NA,76,76,76,https://kwstat.github.io/lookup/
+r-lib,bench,198,15691,17,1,532,536,1129,https://github.com/r-lib/bench
+hadley,reshape,197,129339,122,98,980,5106,5807,http://had.co.nz/reshape
+r-lib,conflicted,194,37579,10,2,738,1018,1125,https://github.com/r-lib/conflicted
+r-dbi,RMySQL,194,114352,24,12,7,2367,7816,https://downloads.mariadb.org/connector-c/ (upstream)
+lionel-,ggstance,190,14679,12,8,194,1686,1686,https://github.com/lionel-/ggstance
+r-lib,xml2,188,551307,453,362,432,454,2262,"https://xml2.r-lib.org/, https://github.com/r-lib/xml2"
+r-lib,processx,174,817289,52,34,60,98,1491,"https://processx.r-lib.org,
+https://github.com/r-lib/processx#readme"
+hadley,assertthat,174,233224,280,274,831,1540,2763,NA
+r-lib,waldo,170,353711,9,3,113,351,439,https://github.com/r-lib/waldo
+r-lib,gh,159,203161,17,13,60,60,1444,"https://gh.r-lib.org/, https://github.com/r-lib/gh#readme"
+r-lib,vdiffr,152,32770,528,0,11,21,1694,"https://vdiffr.r-lib.org/, https://github.com/r-lib/vdiffr"
+tidymodels,tune,152,34838,12,10,67,453,504,"https://github.com/tidymodels/tune, https://tune.tidymodels.org"
+r-lib,keyring,147,4726,19,13,62,62,1389,"https://r-lib.github.io/keyring/index.html,
+https://github.com/r-lib/keyring#readme"
+r-lib,svglite,144,83540,32,11,129,129,2030,"https://svglite.r-lib.org, https://github.com/r-lib/svglite"
+r-lib,cpp11,136,857153,21,1,4,323,354,https://github.com/r-lib/cpp11
+r-lib,ragg,136,1034112,16,4,20,134,715,"https://ragg.r-lib.org, https://github.com/r-lib/ragg"
+r-lib,ymlthis,136,641,3,3,98,636,636,"https://ymlthis.r-lib.org, https://github.com/r-lib/ymlthis"
+r-lib,asciicast,129,274,1,0,564,564,564,NA
+r-lib,rprojroot,129,304970,64,33,226,1273,1921,"https://rprojroot.r-lib.org/, https://github.com/r-lib/rprojroot"
+r-lib,ellipsis,126,1440423,40,40,61,648,1033,"https://ellipsis.r-lib.org, https://github.com/r-lib/ellipsis"
+r-lib,pillar,126,1374527,53,29,44,77,1317,"https://pillar.r-lib.org/, https://github.com/r-lib/pillar"
+r-lib,available,123,718,1,1,711,1320,1320,https://github.com/ropenscilabs/available
+tidyverse,hms,120,825052,47,33,43,43,1884,"https://hms.tidyverse.org/, https://github.com/tidyverse/hms"
+r-lib,debugme,120,9388,10,3,1346,1346,1701,https://github.com/r-lib/debugme#readme
+r-lib,rray,120,7,NA,NA,707,707,707,https://github.com/r-lib/rray
+hadley,lazyeval,120,253598,91,85,837,1843,2463,NA
+r-lib,later,118,319817,18,14,67,67,1465,https://github.com/r-lib/later
+tidymodels,textrecipes,115,1801,NA,NA,229,229,925,"https://github.com/tidymodels/textrecipes,
+https://textrecipes.tidymodels.org"
+hadley,babynames,114,5585,4,2,78,899,2534,https://github.com/hadley/babynames
+jennybc,repurrrsive,113,12338,5,0,715,715,1390,https://github.com/jennybc/repurrrsive
+tidymodels,workflows,110,38737,18,10,111,287,547,"https://github.com/tidymodels/workflows,
+https://workflows.tidymodels.org"
+r-lib,prettyunits,108,408653,68,60,522,537,2451,https://github.com/gaborcsardi/prettyunits
+r-lib,gert,106,245703,11,7,6,92,741,"https://docs.ropensci.org/gert/ (website),
+https://github.com/r-lib/gert (devel), https://libgit2.org
+(upstream)"
+hadley,purrrlyr,103,2424,6,3,195,NA,1522,https://github.com/hadley/purrrlyr
+tidymodels,themis,100,1840,NA,NA,17,533,533,"https://github.com/tidymodels/themis,
+https://themis.tidymodels.org"
+r-lib,desc,99,346764,47,38,116,116,1873,https://github.com/r-lib/desc#readme
+tidymodels,embed,99,591,NA,NA,164,400,1019,"https://embed.tidymodels.org, https://github.com/tidymodels/embed"
+r-lib,tidyselect,97,840169,211,199,60,413,1436,"https://tidyselect.r-lib.org, https://github.com/r-lib/tidyselect"
+r-lib,fastmap,94,308835,6,5,155,155,702,"https://r-lib.github.io/fastmap/, https://github.com/r-lib/fastmap"
+tidymodels,butcher,94,3859,4,3,1,690,690,https://butcher.tidymodels.org
+tidymodels,tidyposterior,93,1581,NA,NA,96,96,1323,"https://tidyposterior.tidymodels.org,
+https://github.com/tidymodels/tidyposterior"
+r-dbi,RMariaDB,92,83634,14,5,77,173,1364,"https://rmariadb.r-dbi.org, https://github.com/r-dbi/RMariaDB,
+https://downloads.mariadb.org/connector-c/"
+tidyverse,nycflights13,91,39984,168,8,78,1099,2534,https://github.com/hadley/nycflights13
+r-lib,coro,91,2389,3,3,194,202,202,https://github.com/r-lib/coro
+r-lib,gargle,91,505604,8,7,88,88,757,"https://gargle.r-lib.org, https://github.com/r-lib/gargle"
+r-lib,evaluate,89,485591,19,12,763,763,3993,https://github.com/r-lib/evaluate
+r-lib,rcmdcheck,88,176074,8,5,784,1014,1919,https://github.com/r-Lib/rcmdcheck#readme
+gaborcsardi,secret,87,522,2,0,418,418,1473,https://github.com/gaborcsardi/secret#readme
+tidymodels,dials,83,37339,15,13,286,NA,1051,"https://dials.tidymodels.org, https://github.com/tidymodels/dials"
+r-lib,sloop,79,2920,4,0,863,973,973,"https://github.com/r-lib/sloop, https://sloop.r-lib.org"
+tidymodels,hardhat,77,36412,7,6,232,561,561,https://github.com/tidymodels/hardhat
+r-lib,prettycode,76,3907,7,4,561,561,1614,https://github.com/r-lib/prettycode#readme
+tidymodels,modeldb,74,1635,NA,NA,505,710,1149,https://github.com/tidymodels/modeldb
+r-lib,askpass,73,400939,14,12,898,898,909,https://github.com/jeroen/askpass#readme
+r-lib,commonmark,71,239870,13,10,941,941,2225,"http://github.com/jeroen/commonmark (devel)
+https://github.github.com/gfm/ (spec)"
+r-lib,lifecycle,68,1403850,130,126,134,134,698,"https://lifecycle.r-lib.org/, https://github.com/r-lib/lifecycle"
+r-lib,mockery,68,20110,75,3,665,1330,1708,https://github.com/jfiksel/mockery
+r-lib,systemfonts,67,150666,9,7,49,148,732,https://github.com/r-lib/systemfonts
+r-lib,gtable,66,423510,316,268,827,827,3220,https://github.com/r-lib/gtable
+r-lib,zip,65,464392,36,29,29,29,1526,https://github.com/r-lib/zip#readme
+tidymodels,probably,65,528,1,0,389,NA,924,"https://github.com/tidymodels/probably/,
+https://probably.tidymodels.org"
+r-lib,clisymbols,64,15360,16,13,1500,1500,2213,https://github.com/gaborcsardi/clisymbols
+r-lib,rappdirs,64,417447,78,70,149,2492,2492,"https://rappdirs.r-lib.org, https://github.com/r-lib/rappdirs"
+r-lib,roxygen2md,63,273,NA,NA,743,743,743,"https://roxygen2md.r-lib.org, https://github.com/r-lib/roxygen2md"
+r-lib,cliapp,62,2938,1,1,265,926,926,https://github.com/r-lib/cliapp#readme
+tidymodels,workflowsets,61,33949,5,3,74,NA,103,"https://github.com/tidymodels/workflowsets,
+https://workflowsets.tidymodels.org"
+r-lib,ps,59,517503,13,7,121,121,1073,https://github.com/r-lib/ps#readme
+tidymodels,usemodels,54,490,NA,NA,224,224,280,"https://usemodels.tidymodels.org/,
+https://github.com/tidymodels/usemodels"
+r-lib,clock,53,1881,1,1,1,68,90,"https://clock.r-lib.org, https://github.com/r-lib/clock"
+r-lib,credentials,53,189613,2,2,343,343,844,"https://docs.ropensci.org/credentials (website)
+https://github.com/r-lib/credentials"
+r-lib,sessioninfo,53,180457,22,9,967,1008,1469,https://github.com/r-lib/sessioninfo#readme
+r-lib,backports,51,376848,44,44,202,239,1957,https://github.com/r-lib/backports
+r-lib,downlit,51,34929,4,2,237,277,301,"https://downlit.r-lib.org/, https://github.com/r-lib/downlit"
+r-lib,liteq,50,460,1,1,844,844,1614,https://github.com/r-lib/liteq#readme
+r-lib,generics,49,525973,72,68,241,241,977,"https://generics.r-lib.org, https://github.com/r-lib/generics"
+r-lib,webfakes,47,5196,4,0,60,NA,195,"https://webfakes.r-lib.org/,
+https://github.com/r-lib/webfakes#readme"
+r-lib,pkgbuild,44,233910,23,14,195,195,1098,https://github.com/r-lib/pkgbuild
+r-lib,pkgdepends,40,2254,1,1,43,105,105,https://github.com/r-lib/pkgdepends#readme
+r-lib,pkgload,40,365832,41,14,84,126,1088,https://github.com/r-lib/pkgload
+r-lib,brio,38,347843,8,5,67,302,460,https://github.com/r-lib/brio
+tidymodels,applicable,38,305,NA,NA,352,NA,400,"https://github.com/tidymodels/applicable,
+https://applicable.tidymodels.org"
+r-lib,diffviewer,37,2803,1,0,292,292,292,https://github.com/r-lib/diffviewer
+r-lib,pkgconfig,36,558539,7,7,646,2173,2178,https://github.com/r-lib/pkgconfig#readme
+tidyverse,blob,35,282912,14,7,525,721,1644,https://github.com/tidyverse/blob
+r-lib,rematch2,34,517766,13,12,424,719,1470,https://github.com/r-lib/rematch2#readme
+r-lib,carrier,33,11992,3,1,987,987,987,https://github.com/r-lib/carrier
+r-lib,filelock,33,22853,6,6,998,NA,1238,https://github.com/r-lib/filelock#readme
+r-lib,cachem,32,395938,5,5,45,162,162,"https://cachem.r-lib.org/, https://github.com/r-lib/cachem"
+r-lib,jose,32,32608,7,5,16,16,1859,"https://datatracker.ietf.org/wg/jose/documents/
+https://www.w3.org/TR/WebCryptoAPI/#jose
+https://github.com/r-lib/jose"
+tidymodels,finetune,31,420,NA,NA,221,NA,221,"https://github.com/tidymodels/finetune,
+https://finetune.tidymodels.org"
+r-lib,urlchecker,30,255,NA,NA,117,117,117,https://github.com/r-lib/urlchecker
+topepo,Cubist,29,21770,15,5,32,32,3716,"https://topepo.github.io/Cubist//,
+https://topepo.github.io/Cubist/"
+tidymodels,rules,27,474,NA,NA,164,244,405,"https://github.com/tidymodels/rules, https://rules.tidymodels.org"
+r-lib,pingr,24,28942,18,7,372,617,2472,https://github.com/r-lib/pingr#readme
+r-lib,xopen,22,170033,1,1,1016,1016,1016,https://github.com/r-lib/xopen#readme
+r-lib,devoid,20,345,NA,NA,330,788,788,https://github.com/r-lib/devoid
+tidymodels,discrim,19,1033,1,0,32,357,627,https://discrim.tidymodels.org
+tidymodels,spatialsample,17,247,NA,NA,117,117,117,"https://github.com/tidymodels/spatialsample,
+https://spatialsample.tidymodels.org"
+r-dbi,DBItest,16,4871,9,0,561,561,1862,"https://dbitest.r-dbi.org, https://github.com/r-dbi/DBItest"
+tidymodels,baguette,16,788,NA,NA,244,244,441,https://github.com/tidymodels/baguette
+tidymodels,modeldata,16,36190,27,1,250,250,571,"https://modeldata.tidymodels.org,
+https://github.com/tidymodels/modeldata"
+lionel-,fontquiver,16,10403,4,0,1610,1706,1759,NA
+r-lib,cleancall,15,344,NA,NA,534,771,771,https://github.com/r-lib/cleancall#readme
+r-lib,pkgcache,15,6375,3,2,41,120,911,https://github.com/r-lib/pkgcache#readme
+r-lib,io,14,324,1,0,560,1261,2580,https://bitbucket.org/djhshih/io
+r-lib,gitcreds,13,173769,2,2,207,235,235,https://github.com/r-lib/gitcreds
+r-lib,whoami,13,10319,13,7,813,813,2212,https://github.com/r-lib/whoami#readme
+r-lib,xmlparsedata,11,24900,3,3,115,1866,1866,https://github.com/r-lib/xmlparsedata#readme
+tidymodels,poissonreg,11,906,NA,NA,244,244,441,"https://github.com/tidymodels/poissonreg,
+https://poissonreg.tidymodels.org/"
+topepo,AmesHousing,10,2643,5,0,371,NA,1372,https://github.com/topepo/AmesHousing
+tidymodels,plsmod,8,299,NA,NA,244,265,441,https://github.com/tidymodels/plsmod
+r-lib,conf,7,457,NA,NA,309,309,1215,NA
+r-lib,textshaping,7,1031532,2,2,20,139,285,https://github.com/r-lib/textshaping
+r-lib,tracer,7,363,NA,NA,1613,1613,1613,https://github.com/mangothecat/tracer#readme
+r-lib,showimage,5,6211,1,1,1252,1252,1252,https://github.com/r-lib/showimage#readme
+topepo,rsample,4,70203,116,80,52,52,1452,"https://rsample.tidymodels.org,
+https://github.com/tidymodels/rsample"
+r-lib,decor,2,6614,2,0,364,364,364,https://github.com/r-lib/decor
+r-lib,oskeyring,2,442,1,0,232,242,242,https://github.com/r-lib/oskeyring#readme
+r-lib,err,1,399,1,1,796,796,974,https://github.com/poissonconsulting/err
+r-lib,tzdb,1,11161,2,2,68,117,117,https://github.com/r-lib/tzdb
