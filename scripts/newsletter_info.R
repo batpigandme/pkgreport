@@ -2,10 +2,13 @@
 suppressPackageStartupMessages(library(tidyverse))
 load(here::here("data", "overview.RData"))
 
+`%nin%` <- Negate(`%in%`)
+
 # get just the pacakges with CRAN releases
 cran_pkgs <- repos %>%
   unique() %>%
-  filter(!is.na(release_1st))
+  filter(!is.na(release_1st)) %>%
+  filter(repo %nin% c("io", "err", "lookup")) # remove packages that are diff on CRAN
 
 # get package URLs from CRAN metadata
 pkgs_urls <- cran_pkgs %>%
